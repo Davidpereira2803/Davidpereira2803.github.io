@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
+
     <nav>
         <div class="nav-container">
-            <div class="logo">DPM</div>
+            <div class="logo">
+                <span class="logo-text">D</span>
+                <span class="logo-separator"></span>
+                <span class="logo-text">P</span>
+                <span class="logo-separator"></span>
+                <span class="logo-text">M</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -22,7 +28,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <div class="profile-image">
@@ -30,18 +35,27 @@
             </div>
             <h1>Hi, I'm David</h1>
             <p class="tagline">Computer Science Student</p>
-            <p class="description">Passionate about software development and robotics</p>
+            <p class="description">Passionate about software development and robotics.<br>
+               Exploring the intersection of AI, robotics, and embedded systems.</p>
             <a href="#contact" class="cta-button">Get in Touch</a>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-text">
                 <p>I'm a Computer Science student in my third year at the University of Luxembourg, passionate about software development and technology. 
                    Through my academic journey, I've gained experience with a wide range of programming languages and technologies, from web development to robotics.</p>
+                
+                <p>My academic focus lies in embedded systems and robotics, where I've worked on projects involving real-time operating systems, 
+                   CAN bus communication, and drone control systems. I'm particularly interested in the intersection of hardware and software, 
+                   developing solutions that bridge the gap between theoretical computer science and practical applications.</p>
+                
+                <p>Beyond my coursework, I actively engage in personal projects that challenge me to learn new technologies and 
+                   apply my knowledge in creative ways. I believe in writing clean, efficient code and am always eager to explore emerging technologies 
+                   in the field of robotics and automation.</p>
+                
                 <div class="skills">
                     <h3>Technologies & Skills</h3>
                     <ul>
@@ -62,47 +76,99 @@
                     <p>Bachelor in Computer Science<br>
                        University of Luxembourg<br>
                        2021 - Present</p>
+                    <div class="resume-download">
+                        <a href="assets/resume.pdf" class="resume-button" target="_blank">
+                            <i class="fa-solid fa-file-pdf"></i> Download Resume
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of your first project</p>
+                <div class="project-header">
+                    <i class="fa-solid fa-code project-icon"></i>
+                    <h3>Portfolio Website</h3>
+                </div>
+                <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript. Features a dark theme with red accents and smooth animations.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
                 <div class="project-links">
-                    <a href="#" class="demo-link">Live Demo</a>
-                    <a href="#" class="code-link">View Code</a>
+                    <a href="https://github.com/Davidpereira2803/Davidpereira2803.github.io" class="code-link" target="_blank">
+                        <i class="fa-brands fa-github"></i> View Code
+                    </a>
                 </div>
             </div>
+
             <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description of your second project</p>
+                <div class="project-header">
+                    <i class="fa-solid fa-robot project-icon"></i>
+                    <h3>Temo - Emotion-Based Drone Interaction</h3>
+                </div>
+                <p>An innovative project integrating facial emotion recognition with a DJI Tello drone. 
+                   Temo interprets human facial expressions to control drone behavior, creating an 
+                   interactive and responsive aerial experience.</p>
+                <div class="project-tech">
+                    <span>ROS2</span>
+                    <span>Python</span>
+                    <span>Linux</span>
+                    <span>Computer Vision</span>
+                    <span>DJI Tello</span>
+                </div>
                 <div class="project-links">
-                    <a href="#" class="demo-link">Live Demo</a>
-                    <a href="#" class="code-link">View Code</a>
+                    <a href="https://github.com/Davidpereira2803/Drone" class="code-link" target="_blank">
+                        <i class="fa-brands fa-github"></i> View Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fa-solid fa-microchip project-icon"></i>
+                    <h3>RPI2-FreeRTOS-CAN-BUS</h3>
+                </div>
+                <p>Extended FreeRTOS implementation for Raspberry Pi 2 with CAN BUS communication capabilities. 
+                   Features include SPI drivers, MCP2515 controller support, and TACLEBENCH integration for embedded systems benchmarking.</p>
+                <div class="project-tech">
+                    <span>C</span>
+                    <span>FreeRTOS</span>
+                    <span>Raspberry Pi</span>
+                    <span>CAN BUS</span>
+                    <span>SPI</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Davidpereira2803/RPI2-FreeRTOS-CAN-BUS" class="code-link" target="_blank">
+                        <i class="fa-brands fa-github"></i> View Code
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Get In Touch</h2>
         <div class="contact-content">
             <div class="contact-links">
-                <a href="mailto:perda2803@gmail.com">Email</a>
-                <a href="https://www.linkedin.com/in/david-pereira-67ab6a278/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/Davidpereira2803" target="_blank">GitHub</a>
+                <a href="mailto:perda2803@gmail.com">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+                <a href="https://www.linkedin.com/in/david-pereira-67ab6a278/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Davidpereira2803" target="_blank">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 David Pereira de Magalhães. All rights reserved.</p>
     </footer>

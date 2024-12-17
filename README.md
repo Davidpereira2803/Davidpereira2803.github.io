@@ -18,9 +18,3 @@ This portfolio website showcases my skills, projects, and contact information. I
 - JavaScript
 - Font Awesome Icons
 - Google Fonts (Inter)
-
-## Local Development
-
-1. Clone the repository
-```bash
-git clone https://
