@@ -1,0 +1,45 @@
+[
+    {
+      "title": "Portfolio Website",
+      "description": "A responsive personal portfolio website built with HTML, CSS, and JavaScript. Features a dark theme with red accents and smooth animations.",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "icon": "fa-code",
+      "link": "https://github.com/Davidpereira2803/Davidpereira2803.github.io"
+    },
+    {
+      "title": "Temo - Emotion-Based Drone Interaction",
+      "description": "An innovative project integrating facial emotion recognition with a DJI Tello drone. Temo interprets human facial expressions to control drone behavior, creating an interactive and responsive aerial experience. Using the ROS2 Tello wrapper developed by the SNT-ARG Team from the University of Luxembourg.",
+      "tech": ["ROS2", "Python", "Linux", "Computer Vision", "DJI Tello"],
+      "icon": "fa-robot",
+      "link": "https://github.com/Davidpereira2803/tello_ros_driver_TEMO"
+    },
+    {
+      "title": "RPI2-FreeRTOS-CAN-BUS",
+      "description": "Extended FreeRTOS implementation for Raspberry Pi 2 with CAN BUS communication capabilities. Features include SPI drivers, MCP2515 controller support, and TACLEBENCH integration for embedded systems benchmarking.",
+      "tech": ["C", "FreeRTOS", "Raspberry Pi", "CAN BUS", "SPI"],
+      "icon": "fa-microchip",
+      "link": "https://github.com/Davidpereira2803/RPI2-FreeRTOS-CAN-BUS"
+    },
+    {
+      "title": "Website for the ASBL Alma Da Beira Alta",
+      "description": "The Alma Da Beira Alta website is developed for a non-profit organization dedicated to preserving Portuguese folklore. It provides information about the group's mission, upcoming events, and ways to get involved. Built with modern web technologies, the site ensures a responsive and user-friendly experience. A custom CMS, developed with React and Firebase, allows administrators to manage website content effortlessly. Additionally, they can track finances and event registrations through the platform.",
+      "tech": ["React", "Vite", "Firebase", "HTML", "CSS", "JavaScript", "TailwindCSS"],
+      "icon": "fa-code",
+      "link": "https://github.com/Davidpereira2803/alma-da-beira-alta"
+    },
+    {
+      "title": "AngleRider",
+      "description": "Coming Soon...",
+      "tech": [],
+      "icon": "fa-code",
+      "link": "https://github.com/Davidpereira2803/"
+    },
+    {
+      "title": "LetzGrade",
+      "description": "Coming Soon...",
+      "tech": [],
+      "icon": "fa-code",
+      "link": "https://github.com/Davidpereira2803/LetzGrade"
+    }
+  ]
+  
