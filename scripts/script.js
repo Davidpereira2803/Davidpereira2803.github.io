@@ -1,3 +1,10 @@
+function truncateText(text, wordLimit) {
+  const words = text.split(" ");
+  if (words.length <= wordLimit) return text;
+  return words.slice(0, wordLimit).join(" ") + "...";
+}
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("project-container");
   
@@ -14,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <i class="fa-solid ${project.icon} project-icon"></i>
               <h3>${project.title}</h3>
             </div>
-            <p>${project.description}</p>
+            <p>${truncateText(project.description, 35)}</p>
             <div class="project-tech">
               ${project.tech.map(tech => `<span>${tech}</span>`).join("")}
             </div>
