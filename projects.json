@@ -1,33 +1,33 @@
 [
     {
-      "title": "Portfolio Website",
-      "description": "A responsive personal portfolio website built with HTML, CSS, and JavaScript. Features a dark theme with red accents and smooth animations.",
-      "tech": ["HTML", "CSS", "JavaScript"],
-      "icon": "fa-code",
-      "link": "https://github.com/Davidpereira2803/Davidpereira2803.github.io"
-    },
-    {
       "title": "Temo - Emotion-Based Drone Interaction",
-      "description": "An innovative project integrating facial emotion recognition with a DJI Tello drone. Temo interprets human facial expressions to control drone behavior, creating an interactive and responsive aerial experience. Using the ROS2 Tello wrapper developed by the SNT-ARG Team from the University of Luxembourg.",
-      "tech": ["ROS2", "Python", "Linux", "Computer Vision", "DJI Tello"],
+      "description": "An innovative project integrating facial emotion recognition with a DJI Tello drone. Temo interprets human facial expressions to control drone behavior, creating an interactive and responsive aerial experience. Using the ROS2 Tello wrapper developed by the SNT-ARG Team from the University of Luxembourg. The project is currently beeing developed and implements a handfull of new modules and features, such as full control with a PS4 controller, full control using the smartphone IMU sensors, full control using an ESP32 paired with a MCP9250 module, and a module that allows the user to play a target shooter game from the drones perspective using ArUco markers as targets.",
+      "tech": ["ROS2", "Python", "Linux", "Computer Vision", "DJI Tello", "OpenCV", "ESP32", "MCP9250", "ArUco Markers"],
       "icon": "fa-robot",
       "link": "https://github.com/Davidpereira2803/tello_ros_driver_TEMO",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/temo-table.png"]
     },
     {
       "title": "RPI2-FreeRTOS-CAN-BUS",
-      "description": "Extended FreeRTOS implementation for Raspberry Pi 2 with CAN BUS communication capabilities. Features include SPI drivers, MCP2515 controller support, and TACLEBENCH integration for embedded systems benchmarking.",
-      "tech": ["C", "FreeRTOS", "Raspberry Pi", "CAN BUS", "SPI"],
+      "description": "This project extends FreeRTOS for the Raspberry Pi 2, enabling CAN BUS communication capabilities. It features SPI drivers, MCP2515 controller support, and integrates TACLEBENCH for embedded systems benchmarking. The implementation facilitates real-time task management and inter-device communication in embedded applications.",
+      "tech": ["C", "FreeRTOS", "Raspberry Pi", "CAN BUS", "SPI", "MPU2515", "TACLEBENCH"],
       "icon": "fa-microchip",
       "link": "https://github.com/Davidpereira2803/RPI2-FreeRTOS-CAN-BUS",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/10led.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/3RPI.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/canbus.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/modelwithcola.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/modulecut.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/terminalmcp.png"]
     },
     {
       "title": "Website for the ASBL Alma Da Beira Alta",
-      "description": "The Alma Da Beira Alta website is developed for a non-profit organization dedicated to preserving Portuguese folklore. It provides information about the group's mission, upcoming events, and ways to get involved. Built with modern web technologies, the site ensures a responsive and user-friendly experience. A custom CMS, developed with React and Firebase, allows administrators to manage website content effortlessly. Additionally, they can track finances and event registrations through the platform.",
+      "description": "A responsive website developed for the non-profit organization Alma Da Beira Alta, dedicated to preserving Portuguese folklore. The site provides information about the group's mission, upcoming events, and participation opportunities. It includes a custom CMS built with React and Firebase, allowing administrators to manage content, track finances, and handle event registrations efficiently. The website is designed to be user-friendly and visually appealing, with a focus on showcasing the organization's activities and heritage.",
       "tech": ["React", "Vite", "Firebase", "HTML", "CSS", "JavaScript", "TailwindCSS"],
       "icon": "fa-code",
       "link": "https://github.com/Davidpereira2803/alma-da-beira-alta"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "A personal portfolio website showcasing projects and skills. Built with HTML, CSS, and JavaScript, it features a dark theme with red accents and smooth animations. The site is designed to be responsive and user-friendly, providing an overview of professional experiences and technical proficiencies.",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "icon": "fa-code",
+      "link": "https://github.com/Davidpereira2803/Davidpereira2803.github.io"
     },
     {
       "title": "AngleRider",
