@@ -2,7 +2,7 @@
 
 A clean, modern, and responsive portfolio website built with **HTML**, **CSS**, and **JavaScript** to showcase personal projects, skills, and contact information.
 
-![Screenshot](https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/tello.jpg)
+![Screenshot](https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/websitescreenshot.png)
 
 ## 📋 Overview
 
