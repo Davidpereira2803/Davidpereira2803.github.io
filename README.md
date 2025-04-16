@@ -1,20 +1,36 @@
-# Personal Portfolio Website
+# 🌐 Personal Portfolio Website
 
-A clean, responsive portfolio website built with HTML, CSS, and JavaScript.
+A clean, modern, and responsive portfolio website built with **HTML**, **CSS**, and **JavaScript** to showcase personal projects, skills, and contact information.
 
-## Overview
+![Screenshot](https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/tello.jpg)
 
-This portfolio website showcases my skills, projects, and contact information. It features a dark theme with red accents and includes sections for:
+## 📋 Overview
 
-- About Me
-- Skills & Technologies
-- Projects
-- Contact Information
+This portfolio website is designed to present my academic background, technical expertise, and personal projects in a professional and engaging way. It features:
 
-## Technologies Used
+- 🧑‍💻 About Me section
+- 💡 Skills & Technologies
+- 🛠️ Dynamic Projects section (data-driven via `projects.json`)
+- 📞 Contact Information
+- 🌗 Dark-themed design with red accents and subtle animations
 
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome Icons
-- Google Fonts (Inter)
+## 🚀 Live Demo
+
+👉 [Visit the Live Portfolio](https://davidpereira2803.github.io/)
+
+## ⚙️ Technologies Used
+
+- **HTML5** – Structure and semantic content
+- **CSS3** – Custom animations, gradients, layout
+- **JavaScript** – Dynamic project rendering from JSON
+- **Font Awesome** – Icons throughout the site
+- **Google Fonts** – Clean and modern typography (Inter)
+
+## 🧠 Features
+
+- Responsive design — optimized for desktop, tablet, and mobile
+- Modular project system using `projects.json`
+- Dynamic detail pages for each project (`project.html?index=n`)
+- Screenshots and tech tags for each project
+- Light animations and hover effects
+- Sticky footer and adaptive navigation bar

@@ -147,8 +147,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 2rem;
-    padding-top: 4rem;
+    padding: 6rem 2rem 0 2rem;
+    box-sizing: border-box;
   }
   
   .hero-content h1 {
