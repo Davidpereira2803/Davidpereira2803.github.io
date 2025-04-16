@@ -12,14 +12,15 @@
       "tech": ["ROS2", "Python", "Linux", "Computer Vision", "DJI Tello"],
       "icon": "fa-robot",
       "link": "https://github.com/Davidpereira2803/tello_ros_driver_TEMO",
-      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg"]
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/temo-table.png"]
     },
     {
       "title": "RPI2-FreeRTOS-CAN-BUS",
       "description": "Extended FreeRTOS implementation for Raspberry Pi 2 with CAN BUS communication capabilities. Features include SPI drivers, MCP2515 controller support, and TACLEBENCH integration for embedded systems benchmarking.",
       "tech": ["C", "FreeRTOS", "Raspberry Pi", "CAN BUS", "SPI"],
       "icon": "fa-microchip",
-      "link": "https://github.com/Davidpereira2803/RPI2-FreeRTOS-CAN-BUS"
+      "link": "https://github.com/Davidpereira2803/RPI2-FreeRTOS-CAN-BUS",
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/10led.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/3RPI.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/canbus.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/modelwithcola.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/modulecut.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/terminalmcp.png"]
     },
     {
       "title": "Website for the ASBL Alma Da Beira Alta",
