@@ -11,7 +11,8 @@
       "description": "An innovative project integrating facial emotion recognition with a DJI Tello drone. Temo interprets human facial expressions to control drone behavior, creating an interactive and responsive aerial experience. Using the ROS2 Tello wrapper developed by the SNT-ARG Team from the University of Luxembourg.",
       "tech": ["ROS2", "Python", "Linux", "Computer Vision", "DJI Tello"],
       "icon": "fa-robot",
-      "link": "https://github.com/Davidpereira2803/tello_ros_driver_TEMO"
+      "link": "https://github.com/Davidpereira2803/tello_ros_driver_TEMO",
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg"]
     },
     {
       "title": "RPI2-FreeRTOS-CAN-BUS",

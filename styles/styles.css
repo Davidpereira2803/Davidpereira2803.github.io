@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
   
   body {
     font-family: 'Inter', sans-serif;
@@ -495,7 +501,7 @@ a:hover {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    margin: 2rem 0;
+    margin: 2rem 0 2rem 2rem;
     padding: 0.7rem 1.5rem;
     background: rgba(255, 51, 51, 0.1);
     color: #ff3333;
@@ -521,6 +527,7 @@ a:hover {
   }
   
   .project-detail-container {
+    flex: 1;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
@@ -738,3 +745,11 @@ a:hover {
       grid-template-columns: 1fr;
     }
   }
+
+  .back-btn-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  

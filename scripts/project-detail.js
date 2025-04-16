@@ -1,36 +1,65 @@
+// scripts/project-detail.js
 document.addEventListener("DOMContentLoaded", () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const index = parseInt(urlParams.get("index"), 10);
-  
-    fetch("projects.json")
-      .then((res) => res.json())
-      .then((projects) => {
-        if (!projects[index]) {
-          document.getElementById("project-detail").innerHTML =
-            "<p style='color: red;'>Project not found.</p>";
-          return;
-        }
-  
-        const project = projects[index];
-        document.title = `${project.title} - Project`;
-  
-        const container = document.getElementById("project-detail");
-        container.innerHTML = `
-          <h1>${project.title}</h1>
-          <p>${project.description}</p>
-          <div class="tech-tags">
-            ${project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join("")}
-          </div>
-          <div class="project-links">
-            <a href="${project.link}" class="code-link" target="_blank">
-              <i class="fa-brands fa-github"></i> View Code
-            </a>
+  const urlParams = new URLSearchParams(window.location.search);
+  const index = parseInt(urlParams.get("index"), 10);
+
+  // Utility to convert GitHub blob URLs to raw URLs
+  const toRawImage = (url) => {
+    return url.includes("github.com") && url.includes("/blob/")
+      ? url.replace("github.com", "raw.githubusercontent.com").replace("/blob", "")
+      : url;
+  };
+
+  fetch("projects.json")
+    .then((res) => res.json())
+    .then((projects) => {
+      const container = document.getElementById("project-detail");
+
+      if (!projects[index]) {
+        container.innerHTML = "<p style='color: red;'>Project not found.</p>";
+        return;
+      }
+
+      const project = projects[index];
+      document.title = `${project.title} - Project`;
+
+      let imagesHTML = "";
+      if (project.images && project.images.length > 0) {
+        imagesHTML = `
+          <div class="project-content-section">
+            <h2>Images</h2>
+            <div class="screenshot-grid">
+              ${project.images.map(
+                (url) => `
+                  <div class="screenshot">
+                    <img src="${toRawImage(url)}" alt="Screenshot of ${project.title}" />
+                  </div>
+                `
+              ).join("")}
+            </div>
           </div>
         `;
-      })
-      .catch(() => {
-        document.getElementById("project-detail").innerHTML =
-          "<p style='color: red;'>Error loading project data.</p>";
-      });
-  });
-  
+      }
+
+      container.innerHTML = `
+        <h1>${project.title}</h1>
+        <p>${project.description}</p>
+
+        <div class="tech-tags">
+          ${project.tech.map((tech) => `<span class="tech-tag">${tech}</span>`).join("")}
+        </div>
+
+        <div class="project-links">
+          <a href="${project.link}" class="code-link" target="_blank">
+            <i class="fa-brands fa-github"></i> View Code
+          </a>
+        </div>
+
+        ${imagesHTML}
+      `;
+    })
+    .catch(() => {
+      document.getElementById("project-detail").innerHTML =
+        "<p style='color: red;'>Error loading project data.</p>";
+    });
+});
