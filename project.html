@@ -1,46 +1,19 @@
+<!-- project.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Project Details</title>
-  <link rel="stylesheet" href="/styles/styles.css">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Detail</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script defer src="scripts/project-detail.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-  <div class="project-detail">
-    <a href="index.html" class="back-btn">← Back to Projects</a>
-    <h1 id="detail-title"></h1>
-    <p id="detail-description"></p>
-    <div id="detail-tech"></div>
-    <a id="detail-link" href="#" target="_blank" class="btn">
-      <i class="fas fa-external-link-alt"></i> View Project
-    </a>
+  <a href="index.html#projects" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Main Page</a>
+  <div class="project-detail-container">
+    <div id="project-detail" class="project-detail"></div>
   </div>
-
-  <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const projectIndex = urlParams.get('index');
-    
-    fetch('projects.json')
-      .then(response => response.json())
-      .then(projects => {
-        const project = projects[projectIndex];
-        
-        document.title = project.title + " | Project Details";
-        document.getElementById('detail-title').textContent = project.title;
-        document.getElementById('detail-description').textContent = project.description;
-        
-        const techContainer = document.getElementById('detail-tech');
-        techContainer.innerHTML = '<h3>Technologies Used:</h3>' + 
-          project.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join(' ');
-        
-        const linkBtn = document.getElementById('detail-link');
-        linkBtn.href = project.link;
-        linkBtn.innerHTML = project.icon ? 
-          `<i class="fas ${project.icon}"></i> ${project.icon === 'fa-code' ? 'View Code' : 'View Project'}` : 
-          'View Project';
-      });
-  </script>
 </body>
 </html>

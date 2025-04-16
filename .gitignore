@@ -26,12 +26,12 @@ yarn-debug.log*
 yarn-error.log*
 
 # Assets
-assets/images/*
+#assets/images/*
 #assets/resume.pdf
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.svg
+#*.jpg
+#*.jpeg
+#*.png
+#*.gif
+#*.svg
 #*.pdf
-*.ico
+#*.ico
