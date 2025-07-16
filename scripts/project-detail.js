@@ -1,9 +1,7 @@
-// scripts/project-detail.js
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const index = parseInt(urlParams.get("index"), 10);
 
-  // Utility to convert GitHub blob URLs to raw URLs
   const toRawImage = (url) => {
     return url.includes("github.com") && url.includes("/blob/")
       ? url.replace("github.com", "raw.githubusercontent.com").replace("/blob", "")
