@@ -1,11 +1,19 @@
 [
     {
       "title": "Temo - Emotion-Based Drone Interaction",
-      "description": "An innovative project integrating facial emotion recognition with a DJI Tello drone. Temo interprets human facial expressions to control drone behavior, creating an interactive and responsive aerial experience. Using the ROS2 Tello wrapper developed by the SNT-ARG Team from the University of Luxembourg. The project is currently beeing developed and implements a handfull of new modules and features, such as full control with a PS4 controller, full control using the smartphone IMU sensors, full control using an ESP32 paired with a MCP9250 module, and a module that allows the user to play a target shooter game from the drones perspective using ArUco markers as targets.",
-      "tech": ["ROS2", "Python", "Linux", "Computer Vision", "DJI Tello", "OpenCV", "ESP32", "MCP9250", "ArUco Markers"],
+      "description": "An innovative project integrating facial emotion recognition with a DJI Tello drone. Temo interprets human facial expressions to control drone behavior, creating an interactive and responsive aerial experience. Using the ROS2 Tello wrapper developed by the SNT-ARG Team from the University of Luxembourg.",
+      "tech": ["ROS2", "Python", "Linux", "Computer Vision", "DJI Tello", "OpenCV"],
       "icon": "fa-robot",
       "link": "https://github.com/Davidpereira2803/tello_ros_driver_TEMO",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/temo-table.png"]
+    },
+    {
+      "title": "Temo - Tello Mixed Reality Handcontrol",
+      "description": "This innovative project integrates facial emotion recognition with a DJI Tello drone to create an interactive and responsive aerial experience. TEMO interprets human facial expressions to control drone behavior, enabling dynamic human-drone interaction. It is built upon the ROS2 Tello wrapper developed by the SNT-ARG Team at the University of Luxembourg. The current second iteration of TEMO expands the system significantly by introducing several new modules and control methods: full control using a PS4 controller, full control via smartphone IMU sensors, full control using an ESP32 paired with an MPU9250 sensor, and an immersive target shooter game from the drone's perspective, where users interact with ArUco markers as targets. These new features aim to push the boundaries of intuitive drone interaction, making TEMO more versatile and engaging than ever before.",
+      "tech": ["ROS2", "Python", "Linux", "Computer Vision", "DJI Tello", "OpenCV", "ESP32", "MCP9250", "ArUco Markers"],
+      "icon": "fa-robot",
+      "link": "https://github.com/Davidpereira2803/tello_mixed_reality_handcontrol",
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/temo-table.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/circuit.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/build.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/Gauntlet.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/HandMovements.jpg"]
     },
     {
       "title": "RPI2-FreeRTOS-CAN-BUS",
@@ -28,13 +36,6 @@
       "tech": ["HTML", "CSS", "JavaScript"],
       "icon": "fa-code",
       "link": "https://github.com/Davidpereira2803/Davidpereira2803.github.io"
-    },
-    {
-      "title": "AngleRider",
-      "description": "Coming Soon...",
-      "tech": [],
-      "icon": "fa-code",
-      "link": "https://github.com/Davidpereira2803/"
     },
     {
       "title": "LetzGrade",
