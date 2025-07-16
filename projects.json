@@ -13,7 +13,7 @@
       "tech": ["ROS2", "Python", "Linux", "Computer Vision", "DJI Tello", "OpenCV", "ESP32", "MCP9250", "ArUco Markers"],
       "icon": "fa-robot",
       "link": "https://github.com/Davidpereira2803/tello_mixed_reality_handcontrol",
-      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/temo-table.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/circuit.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/build.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/Gauntlet.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/HandMovements.jpg"]
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/temo-table.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/circuit.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/build.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/Gauntlet.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/HandMovements.png"]
     },
     {
       "title": "RPI2-FreeRTOS-CAN-BUS",
