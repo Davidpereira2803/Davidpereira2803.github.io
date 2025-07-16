@@ -386,6 +386,15 @@
         width: 150px;
         height: 150px;
     }
+
+    .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #fff;
+  }
+
   }
   
   .education {
@@ -751,5 +760,13 @@ a:hover {
     width: 100%;
     padding: 2rem;
     margin: 0 auto;
+  }
+
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #fff;
   }
   
