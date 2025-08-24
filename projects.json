@@ -3,17 +3,19 @@
       "title": "Temo - Emotion-Based Drone Interaction",
       "description": "An innovative project integrating facial emotion recognition with a DJI Tello drone. Temo interprets human facial expressions to control drone behavior, creating an interactive and responsive aerial experience. Using the ROS2 Tello wrapper developed by the SNT-ARG Team from the University of Luxembourg.",
       "tech": ["ROS2", "Python", "Linux", "Computer Vision", "DJI Tello", "OpenCV"],
-      "icon": "fa-robot",
+      "icon": "fa-helicopter",
       "link": "https://github.com/Davidpereira2803/tello_ros_driver_TEMO",
-      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/temo-table.png"]
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/temo-table.png"],
+      "status": "finished"
     },
     {
       "title": "Temo - Tello Mixed Reality Handcontrol",
       "description": "This innovative project integrates facial emotion recognition with a DJI Tello drone to create an interactive and responsive aerial experience. TEMO interprets human facial expressions to control drone behavior, enabling dynamic human-drone interaction. It is built upon the ROS2 Tello wrapper developed by the SNT-ARG Team at the University of Luxembourg. The current second iteration of TEMO expands the system significantly by introducing several new modules and control methods: full control using a PS4 controller, full control via smartphone IMU sensors, full control using an ESP32 paired with an MPU9250 sensor, and an immersive target shooter game from the drone's perspective, where users interact with ArUco markers as targets. These new features aim to push the boundaries of intuitive drone interaction, making TEMO more versatile and engaging than ever before.",
       "tech": ["ROS2", "Python", "Linux", "Computer Vision", "DJI Tello", "OpenCV", "ESP32", "MCP9250", "ArUco Markers"],
-      "icon": "fa-robot",
+      "icon": "fa-helicopter",
       "link": "https://github.com/Davidpereira2803/tello_mixed_reality_handcontrol",
-      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/temo-table.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/circuit.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/build.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/Gauntlet.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/HandMovements.png"]
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/temo-table.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/circuit.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/build.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/Gauntlet.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/HandMovements.png"],
+      "status": "finished"
     },
     {
       "title": "RPI2-FreeRTOS-CAN-BUS",
@@ -21,22 +23,26 @@
       "tech": ["C", "FreeRTOS", "Raspberry Pi", "CAN BUS", "SPI", "MPU2515", "TACLEBENCH"],
       "icon": "fa-microchip",
       "link": "https://github.com/Davidpereira2803/RPI2-FreeRTOS-CAN-BUS",
-      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/10led.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/3RPI.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/canbus.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/modelwithcola.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/modulecut.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/terminalmcp.png"]
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/10led.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/3RPI.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/canbus.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/modelwithcola.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/modulecut.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/terminalmcp.png"],
+      "status": "finished"
     },
     {
       "title": "LetzGrade Mobile App",
-      "description": "LetzGrade is a mobile application designed to streamline academic grading and feedback for students and educators. The app provides an intuitive interface for grade management, assignment tracking, and real-time feedback. Built with cross-platform technologies, LetzGrade aims to enhance productivity and transparency in educational environments.",
+      "description": "LetzGrade is a mobile application designed to simplify academic grading and feedback for students in the Luxembourgish high school system. The app offers an intuitive interface for managing grades and automatically calculates averages. Built with cross-platform technologies, LetzGrade helps students stay organized and makes grade tracking easier, even for the most chaotic learners.",
       "tech": ["Flutter", "Dart", "Firebase", "Android", "iOS", "REST API"],
-      "icon": "fa-code",
+      "icon": "fa-mobile-alt",
       "link": "https://github.com/Davidpereira2803/letzgrade-mobile",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app1.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app2.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app3.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app4.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app5.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app6.jpg",
-      "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app7.jpg"]
+      "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app7.jpg"],
+      "status": "prototype"
     },
     {
       "title": "LetzGrade Web",
-      "description": "Coming Soon...",
-      "tech": [],
-      "icon": "fa-code",
-      "link": "https://github.com/Davidpereira2803/letzgrade.web"
+      "description": "LetzGrade Web is a landing page designed to present and promote the LetzGrade Mobile App. It provides an overview of the app's features, technology stack, and benefits for students and educators. The site serves as an entry point for users to learn more about LetzGrade and access download links for Android and iOS.",
+      "tech": ["React", "JavaScript", "TailwindCss"],
+      "icon": "fa-globe",
+      "link": "https://github.com/Davidpereira2803/letzgrade.web",
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeWeb/LetzGrade-web1.png","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeWeb/LetzGrade-web2.png"],
+      "status": "prototype"
     }
   ]

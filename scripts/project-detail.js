@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       container.innerHTML = `
         <h1>${project.title}</h1>
+        <p class="project-status"><strong>Status:</strong> ${project.status ? project.status.charAt(0).toUpperCase() + project.status.slice(1) : "N/A"}</p>
         <p>${project.description}</p>
 
         <div class="tech-tags">

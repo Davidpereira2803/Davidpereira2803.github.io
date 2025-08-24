@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="project-tech">
               ${project.tech.map(tech => `<span>${tech}</span>`).join("")}
             </div>
+            <h4>Project status: ${project.status ? project.status.charAt(0).toUpperCase() + project.status.slice(1) : "N/A"}</h4>
             <div class="project-links">
               <a href="${project.link}" class="code-link" target="_blank">
                 <i class="fa-brands fa-github"></i> View Code
