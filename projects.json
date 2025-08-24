@@ -24,25 +24,19 @@
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/10led.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/3RPI.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/canbus.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/modelwithcola.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/modulecut.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/terminalmcp.png"]
     },
     {
-      "title": "Website for the ASBL Alma Da Beira Alta",
-      "description": "A responsive website developed for the non-profit organization Alma Da Beira Alta, dedicated to preserving Portuguese folklore. The site provides information about the group's mission, upcoming events, and participation opportunities. It includes a custom CMS built with React and Firebase, allowing administrators to manage content, track finances, and handle event registrations efficiently. The website is designed to be user-friendly and visually appealing, with a focus on showcasing the organization's activities and heritage.",
-      "tech": ["React", "Vite", "Firebase", "HTML", "CSS", "JavaScript", "TailwindCSS"],
+      "title": "LetzGrade Mobile App",
+      "description": "LetzGrade is a mobile application designed to streamline academic grading and feedback for students and educators. The app provides an intuitive interface for grade management, assignment tracking, and real-time feedback. Built with cross-platform technologies, LetzGrade aims to enhance productivity and transparency in educational environments.",
+      "tech": ["Flutter", "Dart", "Firebase", "Android", "iOS", "REST API"],
       "icon": "fa-code",
-      "link": "https://github.com/Davidpereira2803/alma-da-beira-alta"
+      "link": "https://github.com/Davidpereira2803/letzgrade-mobile",
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app1.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app2.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app3.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app4.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app5.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app6.jpg",
+      "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app7.jpg"]
     },
     {
-      "title": "Portfolio Website",
-      "description": "A personal portfolio website showcasing projects and skills. Built with HTML, CSS, and JavaScript, it features a dark theme with red accents and smooth animations. The site is designed to be responsive and user-friendly, providing an overview of professional experiences and technical proficiencies.",
-      "tech": ["HTML", "CSS", "JavaScript"],
-      "icon": "fa-code",
-      "link": "https://github.com/Davidpereira2803/Davidpereira2803.github.io"
-    },
-    {
-      "title": "LetzGrade",
+      "title": "LetzGrade Web",
       "description": "Coming Soon...",
       "tech": [],
       "icon": "fa-code",
-      "link": "https://github.com/Davidpereira2803/LetzGrade"
+      "link": "https://github.com/Davidpereira2803/letzgrade.web"
     }
   ]
-  
