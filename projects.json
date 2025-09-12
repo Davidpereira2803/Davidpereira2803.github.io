@@ -27,6 +27,15 @@
       "status": "finished"
     },
     {
+      "title": "Alma Da Beira Alta - Website",
+      "description": "Website for the Alma Da Beira Alta cultural association in Luxembourg. Includes a public homepage, events with registration, gallery, about page, and a secure admin panel to manage events, gallery, members, and finances. Multi-language support (EN/FR/PT/DE) and fully responsive.",
+      "tech": ["React", "Vite", "Firebase", "Firestore", "Auth", "Hosting", "TailwindCss", "react-i18next", "Recharts", "react-responsive-carousel", "Lottie"],
+      "icon": "fa-globe",
+      "link": "https://github.com/Davidpereira2803/alma-da-beira-alta",
+      "images": [],
+      "status": "in progress"
+    },
+    {
       "title": "LetzGrade Mobile App",
       "description": "LetzGrade is a mobile application designed to simplify academic grading and feedback for students in the Luxembourgish high school system. The app offers an intuitive interface for managing grades and automatically calculates averages. Built with cross-platform technologies, LetzGrade helps students stay organized and makes grade tracking easier, even for the most chaotic learners.",
       "tech": ["Flutter", "Dart", "Firebase", "Android", "iOS", "REST API"],
