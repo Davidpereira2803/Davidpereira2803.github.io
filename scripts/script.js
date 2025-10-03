@@ -42,10 +42,3 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML = `<p style="color: red;">Failed to load projects. Please try again later.</p>`;
       });
   });
-  
-function revealEmail() {
-    const user = 'perda2803';
-    const domain = 'gmail.com';
-    const email = user + '@' + domain;
-    window.location.href = 'mailto:' + email;
-}
