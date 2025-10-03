@@ -43,3 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   });
   
+function revealEmail() {
+    const user = 'perda2803';
+    const domain = 'gmail.com';
+    const email = user + '@' + domain;
+    window.location.href = 'mailto:' + email;
+}
