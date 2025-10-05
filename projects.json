@@ -32,7 +32,7 @@
       "tech": ["React", "Vite", "Firebase", "Firestore", "Auth", "Hosting", "TailwindCss", "react-i18next", "Recharts", "react-responsive-carousel", "Lottie"],
       "icon": "fa-globe",
       "link": "https://github.com/Davidpereira2803/alma-da-beira-alta",
-      "images": [],
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/AlmaDaBeiraAlta/welcome.png","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/AlmaDaBeiraAlta/services.png","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/AlmaDaBeiraAlta/joincommunity.png"],
       "status": "in progress"
     },
     {
