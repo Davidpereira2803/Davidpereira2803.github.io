@@ -33,7 +33,16 @@
       "icon": "fa-globe",
       "link": "https://github.com/Davidpereira2803/alma-da-beira-alta",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/AlmaDaBeiraAlta/welcome.png","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/AlmaDaBeiraAlta/services.png","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/AlmaDaBeiraAlta/joincommunity.png"],
-      "status": "in progress"
+      "status": "prototype/ in production"
+    },
+    {
+      "title": "Imposter Hunt",
+      "description": "Imposter Hunt is a fast-paced pass-and-play social deduction game where players try to identify the Imposter on a single shared device. Players receive a secret word except the Imposter, who must blend in and guess the word after surviving the voting rounds. The project features an AI-backed generation API that lets users create custom word lists from their own input (for example, 'Clash Royale cards' or any custom theme). Generated lists are saved locally and can be used as the secret-word pool for games.",
+      "tech": ["React Native", "Expo", "Expo Router", "Zustand", "AsyncStorage", "Expo Haptics", "Google Mobile Ads"],
+      "icon": "fa-user-secret",
+      "link": "https://github.com/Davidpereira2803/imposter-hunt",
+      "images": [],
+      "status": "prototype"
     },
     {
       "title": "LetzGrade Mobile App",
