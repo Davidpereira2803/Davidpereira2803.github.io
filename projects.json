@@ -47,7 +47,7 @@
     {
       "title": "LetzGrade Mobile App",
       "description": "LetzGrade is a mobile application designed to simplify academic grading and feedback for students in the Luxembourgish high school system. The app offers an intuitive interface for managing grades and automatically calculates averages. Built with cross-platform technologies, LetzGrade helps students stay organized and makes grade tracking easier, even for the most chaotic learners.",
-      "tech": ["Flutter", "Dart", "Firebase", "Android", "iOS", "REST API"],
+      "tech": ["React Native", "Expo Go", "Firebase", "Android", "iOS"],
       "icon": "fa-mobile-alt",
       "link": "https://github.com/Davidpereira2803/letzgrade-mobile",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app1.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app2.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app3.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app4.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app5.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app6.jpg",
