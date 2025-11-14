@@ -42,6 +42,15 @@
       "icon": "fa-user-secret",
       "link": "https://github.com/Davidpereira2803/imposter-hunt",
       "images": [],
+      "status": "prototype/ testing"
+    },
+    {
+      "title": "ROS Monitor",
+      "description": "ROS Monitor is a mobile application designed to interface with ROS (Robot Operating System) environments. It provides real-time monitoring and control of ROS topics, services, and parameters through an intuitive mobile interface. The app leverages React Native and Expo for cross-platform compatibility, allowing users to connect to ROS bridges and visualize data streams on their smartphones or tablets. Ideal for robotics developers and enthusiasts, ROS Monitor enhances the ability to manage and debug ROS-based systems remotely.",
+      "tech": ["ROS", "ROS Monitor", "ROS Bridge", "ROS Topics", "React Native", "Expo", "Expo Router", "Zustand", "AsyncStorage"],
+      "icon": "fa-robot",
+      "link": "https://github.com/Davidpereira2803/ground",
+      "images": [],
       "status": "prototype"
     },
     {
