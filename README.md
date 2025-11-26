@@ -4,21 +4,21 @@ A clean, modern, and responsive portfolio website built with **HTML**, **CSS**, 
 
 ![Screenshot](https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/websitescreenshot.png)
 
-## 📋 Overview
+## Overview
 
 This portfolio website is designed to present my academic background, technical expertise, and personal projects in a professional and engaging way. It features:
 
-- 🧑‍💻 About Me section
-- 💡 Skills & Technologies
-- 🛠️ Dynamic Projects section (data-driven via `projects.json`)
-- 📞 Contact Information
-- 🌗 Dark-themed design with red accents and subtle animations
+- About Me section
+- Skills & Technologies
+- Dynamic Projects section (data-driven via `projects.json`)
+- Contact Information
+- Dark-themed design with red accents and subtle animations
 
-## 🚀 Live Demo
+## Live Demo
 
-👉 [Visit the Live Portfolio](https://davidpereira2803.github.io/)
+[Visit the Live Portfolio](https://davidpereira2803.github.io/)
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 - **HTML5** – Structure and semantic content
 - **CSS3** – Custom animations, gradients, layout
@@ -26,7 +26,7 @@ This portfolio website is designed to present my academic background, technical 
 - **Font Awesome** – Icons throughout the site
 - **Google Fonts** – Clean and modern typography (Inter)
 
-## 🧠 Features
+## Features
 
 - Responsive design — optimized for desktop, tablet, and mobile
 - Modular project system using `projects.json`
