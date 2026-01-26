@@ -58,8 +58,6 @@ async function loadCvUpdatedDate() {
       year: 'numeric',
       month: 'short',
       day: '2-digit',
-      hour: '2-digit',
-      minute: '2-digit'
     });
 
     document.getElementById('cv-last-updated').textContent = formatted;
