@@ -1,0 +1,37 @@
+%!TEX encoding = UTF8
+%!TEX root =cv-llt.tex
+
+
+\newcommand{\languagebar}[1]{%
+  \begin{tikzpicture}
+    \foreach \i in {1,...,5} {
+      \ifnum\i>#1
+        \fill[gray!30] (\i-1,0) rectangle (\i,0.4);
+      \else
+        \fill[black!70] (\i-1,0) rectangle (\i,0.4);
+      \fi
+    }
+  \end{tikzpicture}%
+}
+
+\begin{rubric}{Skills}
+\noentry{2014 -- 2015}
+\entry*[Languages]
+	\begin{itemize}
+	    \item[\faFlag]\languagebar{3}\hspace{1em}German.
+        \item[\faFlag]\languagebar{4}\hspace{1em}French.
+        \item[\faFlag]\languagebar{4}\hspace{1em}English.
+        \item[\faFlag]\languagebar{5}\hspace{1em}Luxembourgish.
+        \item[\faFlag]\languagebar{5}\hspace{1em}Portuguese (Native).
+	\end{itemize}
+\entry*[Programming\hfill]
+	Java, Python, JavaScript, HTML, CSS, C++, C, \LaTeX, \ldots
+\entry*[Web Dev]
+	\textsc{Html, css}, JavaScript, FastAPI, React.
+\entry*[Robotics/Electronics]
+    ROS, Linux, Raspberry Pi, DJI Tello Drone
+\entry*[Data Base Technologies]
+    FireBase, SQLite
+\entry*[Additional Interests]
+	Academic research, Football, Sport.
+\end{rubric}

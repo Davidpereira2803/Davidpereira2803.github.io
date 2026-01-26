@@ -1,0 +1,34 @@
+name: Build and Deploy CV
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout CV repo
+      uses: actions/checkout@v4
+
+    - name: Compile LaTeX CV
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: cv-llt.tex
+
+    - name: Rename PDF
+      run: mv cv-llt.pdf cv.pdf
+
+    - name: Push CV to Portfolio Repo
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.PERSONAL_TOKEN }}
+      with:
+        source-directory: .
+        destination-github-username: Davidpereira2803
+        destination-repository-name: Davidpereira2803.github.io
+        target-directory: assets/cv
+        user-email: github-actions@github.com
+        user-name: github-actions
+        commit-message: "Auto-update CV"
