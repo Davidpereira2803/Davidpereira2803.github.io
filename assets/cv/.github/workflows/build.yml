@@ -17,10 +17,33 @@ jobs:
       with:
         root_file: cv-llt.tex
 
-    - name: Rename PDF
-      run: mv cv-llt.pdf cv.pdf
+    - name: Create versioned filenames + info
+      shell: bash
+      run: |
+        set -euo pipefail
 
-    - name: Push CV to Portfolio Repo
+        SHORT_SHA="${GITHUB_SHA::7}"
+        DATE_UTC="$(date -u +%F)"
+        ISO_UTC="$(date -u +%FT%TZ)"
+
+        LATEST="cv-latest.pdf"
+        VERSIONED="cv-${DATE_UTC}_${SHORT_SHA}.pdf"
+
+        # output from latex-action is cv-llt.pdf
+        mv cv-llt.pdf "$LATEST"
+
+        mkdir -p versions
+        cp "$LATEST" "versions/$VERSIONED"
+
+        cat > cv-info.json <<EOF
+        {
+          "updated_at_utc": "$ISO_UTC",
+          "latest_pdf": "$LATEST",
+          "versioned_pdf": "versions/$VERSIONED"
+        }
+        EOF
+
+    - name: Push CV files to Portfolio Repo
       uses: cpina/github-action-push-to-another-repository@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.PERSONAL_TOKEN }}
@@ -31,4 +54,4 @@ jobs:
         target-directory: assets/cv
         user-email: github-actions@github.com
         user-name: github-actions
-        commit-message: "Auto-update CV"
+        commit-message: "Auto-update CV (latest + versioned)"
