@@ -1,134 +1,330 @@
-%%%%%%%%%%%%%%%
-% This CV example/template is based on my own
-% CV which I (lamely attempted) to clean up, so that
-% it's less of an eyesore and easier for others to use.
-%
-% LianTze Lim (liantze@gmail.com)
-% 23 Oct, 2022
-%
-\documentclass[a4paper,skipsamekey,11pt,english]{curve}
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
 
-% Uncomment to enable Chinese; needs XeLaTeX
-% \usepackage{ctex}
+%---- Required Packages and Functions ----
 
-
-% Default biblatex style used for the publication list is APA6. If you wish to use a different style or pass other options to biblatex you can change them here. 
-\PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true}{biblatex}
-
-% Most commands and style definitions are in settings.sty.
-\usepackage{settings}
-\usepackage{tikz}
-% If you need to further customise your biblatex setup e.g. with \DeclareFieldFormat etc please add them here AFTER loading settings.sty. For example, to remove the default "[Online] Available:" prefix before URLs when using the IEEE style:
-\DefineBibliographyStrings{english}{url={\textsc{url}}}
-
-%% Only needed if you want a Publication List
-\addbibresource{own-bib.bib}
-
-%% Specify your last name(s) and first name(s) (as given in the .bib) to automatically bold your own name in the publications list. 
-%% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
-% \mynames{Lim/Lian\bibnamedelima Tze}
-
-%% You can specify multiple names like this, especially if you have changed your name or if you need to highlight multiple authors. See items 6–9 in the example "Journal Articles" output.
-\mynames{Lim/Lian\bibnamedelima Tze,
-  Wong/Lian\bibnamedelima Tze,
-  Lim/Tracy,
-  Lim/L.\bibnamedelimi T.}
-%% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
-
-
-% Change the fonts if you want
-\ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
-  \usepackage{fontspec} 
-  %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
-  \usepackage[p,osf,swashQ]{cochineal}
-  \usepackage[medium,bold]{cabin}
-  \usepackage[varqu,varl,scale=0.9]{zi4}
-\else % If you're using pdfLaTeX or latex
-  \usepackage[T1]{fontenc}
-  \usepackage[p,osf,swashQ]{cochineal}
-  \usepackage{cabin}
-  \usepackage[varqu,varl,scale=0.9]{zi4}
-\fi
-
-% Change the page margins if you want
-% \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
-
-% Change the colours if you want
-% \definecolor{SwishLineColour}{HTML}{00FFFF}
-% \definecolor{MarkerColour}{HTML}{0000CC}
-
-% Change the item prefix marker if you want
-% \prefixmarker{$\diamond$}
-
-%% Photo is only shown if "fullonly" is included
-\includecomment{fullonly}
-% \excludecomment{fullonly}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\leftheader{%
-  {\LARGE\bfseries\sffamily PEREIRA DE MAGALHAES David}
-
-  \makefield{\faEnvelope[regular]}{\href{perda2803@gmail.com}{\texttt{perda2803@gmail.com}}}
-  
-  \makefield{\faPhone[regular]}
-  {\texttt{+352 691 244 236}}
-  
-  \makefield{\faLinkedin}
-  {\href{https://www.linkedin.com/in/davidpereira2803/}{\texttt{David Pereira}}}
-
-   \makefield{\faGithub}
-  {\href{https://github.com/Davidpereira2803}{\texttt{Davidpereira2803}}}
-
-  \makefield{\faGlobe}
-  {\href{https://davidpereira2803.github.io/}{\texttt{Project Portfolio}}}
-
-
-    \makefield{\faHome}
-    {\texttt{63, Rue Joseph Philippart Rodange L-4845 (Luxembourg)}}
-    
-    \makefield{\faAngleRight}
-    {\texttt{Born on the 28/03/2003 in Niedercorn}}
-
-    \makefield{\faCar}
-    {\texttt{A, B}}
-  
-
-  %% Next line
-
-  % You can use a tabular here if you want to line up the fields.
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{comment}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
 }
 
-\rightheader{~}
-\begin{fullonly}
-\photo[r]{photo}
-\photoscale{0.13}
-\end{fullonly}
+\usepackage{tikz}
 
-\title{Curriculum Vitae}
+\newcommand{\skillblocks}[1]{%
+\begin{tikzpicture}[baseline]
+\foreach \i in {1,...,5} {
+  \ifnum\i>#1
+    \draw[fill=black!15] (0.5*\i,0) rectangle +(0.4,0.12);
+  \else
+    \draw[fill=black!70] (0.5*\i,0) rectangle +(0.4,0.12);
+  \fi
+}
+\end{tikzpicture}
+}
+
+
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}  \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \text{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Pereira de Magalhaes David} % Your Name
+\newcommand{\course}{Master in Information and Computer Sciences Student} % Your Program
+\newcommand{\phone}{691244236} % Your Phone Number
+\newcommand{\emaila}{perda2803@gmail.com} %Email 1
+
+
+
 
 \begin{document}
-\makeheaders[c]
-    Computer Science student passionate about Artificial Intelligence and secure systems. Previous experiences in web development, robotics and academic research, with strong multilingual communication skills.
-\makerubric{education}
-
-% If you're not a researcher nor an academic, you probably don't have any publications; delete this line.
-%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
-%%\input{publications}
-
-\makerubric{skills}
-
-\makerubric{employment}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
 
 
-%\makerubric{Jobinfo}
-%\makerubric{misc}
+\parbox{2.35cm}{%
+\includegraphics[width=2.3cm,clip]{photo.jpg}
+}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +352-\phone}\\
+   {63, Rue Joseph Philippart, L-4845 Rodange (Luxembourg)}&  \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}}\\
+     &  \href{https://github.com/Davidpereira2803}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub Profile}} \\
+    & \href{https://www.linkedin.com/in/davidpereira2803/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn Profile}}\\
+   \course & \href{https://pearlabs.dev/}{\raisebox{0.0\height}{\footnotesize \faGlobe}\ {Portfolio Website}}
+\end{tabularx}
+}
 
-%\makerubric{referee}
+% \parbox{3.0cm}{%
+% \flushright \includegraphics[width=2cm,clip]{nitp_logo.png}
+% }
 
 
-% \input{referee-full}
 
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lycée Mathias Adam}
+      {TE-ALL}{2015-2018}
+    \resumeSubheading
+      {Lycée Mathias Adam}
+      {Section Générale Ingénieur (GIG)}{2018-2022}
+    \resumeSubheading
+      {University of Luxembourg (University of Namur Exchange Semester)}
+      {Bachelor in Computer Science}{2022-2025}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Costantini SA}{}
+      {Manoeuvre (Summer Job)}{2019-2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Assisted with on-site construction logistics and equipment handling}
+    \item {Developed teamwork and time management skills in a high-paced environment}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-8.5mm}
+
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Personal Projects}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {MicroK8s Cluster (HomeLab)} %Project Name
+      {Running multiple applications on a self made single node MicroK8s server.} %Project Name, Location Name
+      {\href{https://github.com/Davidpereira2803}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}}} %Github Link
+        
+      \resumeItemListStart
+        \item {Tools \& technologies used: Ubuntu Server, MicroK8s}
+        \item {Designed and deployed a Kubernetes HomeLab using MicroK8s on Ubuntu Server with repurposed laptop hardware and a custom-built case.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Skills and Interests}}
+
+\begin{itemize}[leftmargin=0.05in, label={}]
+\small{\item{
+
+\begin{multicols}{2}
+
+\textbf{Languages:}
+\begin{tabularx}{\linewidth}{@{}p{4cm} X@{}}
+Portuguese (Native) & \skillblocks{5} \\
+Luxembourgish       & \skillblocks{5} \\
+French              & \skillblocks{4} \\
+English             & \skillblocks{4} \\
+German              & \skillblocks{3} \\
+\end{tabularx}
+
+
+\columnbreak
+
+\textbf{Programming Languages}{: } \\
+Python, JavaScript, Java \\
+\vspace{2pt}
+
+\textbf{DevOps \& Infrastructure}{: } \\
+Linux, Docker, Kubernetes, MicroK8s \\
+\vspace{2pt}
+
+\textbf{Frameworks \& Tools}{: } \\
+ROS, FastAPI, React, React Native\\
+\vspace{2pt}
+
+\textbf{Databases}{: } \\
+Firebase, SQLite \\
+\vspace{2pt}
+
+\textbf{Version Control}{: } \\
+Git, GitHub \\
+\vspace{2pt}
+
+\textbf{Hardware \& Embedded Systems}{: } \\
+Raspberry Pi, DJI Tello Drone, Sensors, GPIO \\
+\vspace{2pt}
+
+\textbf{CAD \& Digital Fabrication}{: } \\
+3D Printing (FDM), 3D Modeling (Fusion 360) \\
+\vspace{2pt}
+
+
+\end{multicols}
+
+}}
+\end{itemize}
+\vspace{-16pt}
+
+
+
+
+\begin{comment}
+%-----------Positions of Responsibility-----------------
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Position, } % Position
+    {Club or Event} %Club,Event
+    {Position tenure} %Tenure Period
+\resumePOR{Position, } % Position
+    {Club or Event} %Club,Event
+    {Position tenure} %Tenure Period
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Achievement } % Award
+    {description} % Event
+    {Event dates} %Event Year
+    
+\resumePOR{Achievement } % Award
+    {description} % Event
+    {Event dates} %Event Year
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+\setlength{\footskip}{4.08003pt}
+\end{comment}
+
+%-------------------------------------------
 \end{document}
