@@ -11,6 +11,7 @@ This portfolio website is designed to present my academic background, technical 
 - About Me section
 - Skills & Technologies
 - Dynamic Projects section (data-driven via `projects.json`)
+- Dedicated project detail pages (`project.html?index=n`)
 - Contact Information
 - Dark-themed design with red accents and subtle animations
 
@@ -30,7 +31,8 @@ This portfolio website is designed to present my academic background, technical 
 
 - Responsive design — optimized for desktop, tablet, and mobile
 - Modular project system using `projects.json`
-- Dynamic detail pages for each project (`project.html?index=n`)
-- Screenshots and tech tags for each project
+- Project categories: robotics, web, mobile, embedded, infrastructure
+- Dynamic detail pages for each project
+- Screenshots, videos, and tech tags for each project
 - Light animations and hover effects
 - Sticky footer and adaptive navigation bar
