@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Pereira de Magalhães - Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-
-    <nav>
+    <!-- Navigation -->
+    <nav id="navbar">
         <div class="nav-container">
-            <a href="#home" class="logo">
-                <img src="https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/profile-image.png" alt="David's Profile" class="logo-image">
-            </a>
+            <a href="#home" class="logo">DPM</a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -24,102 +22,255 @@
         </div>
     </nav>
 
-    <div class="home-about-container">
-        <section id="home" class="hero hero-side">
-            <div class="hero-content">
-                <h1>Hi, I'm David</h1>
-                <p class="tagline">Computer Science Student</p>
-                <p class="description">Passionate about software development and robotics.<br>
-                   Exploring the intersection of AI, robotics, and embedded systems.</p>
-                <a href="#contact" class="cta-button">Get in Touch</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>David Pereira de Magalhães</h1>
+            <p class="subtitle">Computer Science Student & Robotics AI Enthusiast</p>
+            <p class="description">
+                Master's student in Information and Computer Sciences at the University of Luxembourg. 
+                Building innovative solutions at the intersection of AI, robotics, and embedded systems.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Get in Touch
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="about about-side">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I hold a Bachelor's degree in Computer Science from the University of Luxembourg and am currently a first-year student in the Master in Information and Computer Science at the same university. 
-                    I am passionate about software development and technology, and I enjoy working on projects that connect theory with practical applications.</p>
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Passionate about creating intelligent systems that make a difference</p>
+        </div>
 
-                    <p>During my academic journey, I have gained experience across a wide range of programming languages and technologies, from web development to embedded systems and robotics. 
-                    My focus areas include real-time operating systems, CAN bus communication, and drone control systems. I am particularly interested in the intersection of hardware and software, 
-                    developing solutions that bridge computer science fundamentals with real-world applications.</p>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    I hold a Bachelor's degree in Computer Science from the University of Luxembourg and am currently 
+                    a first-year student in the Master in Information and Computer Science at the same university. 
+                    I am passionate about software development and technology, and I enjoy working on projects that 
+                    connect theory with practical applications.
+                </p>
+                <p>
+                    During my academic journey, I have gained experience across a wide range of programming languages 
+                    and technologies, from web development to embedded systems and robotics. My focus areas include 
+                    real-time operating systems, CAN bus communication, and drone control systems. I am particularly 
+                    interested in the intersection of hardware and software, developing solutions that bridge computer 
+                    science fundamentals with real-world applications.
+                </p>
+                <p>
+                    Beyond my studies, I actively pursue personal projects that challenge me to learn new technologies 
+                    and apply my knowledge in innovative ways. I believe in writing clean, efficient, and maintainable 
+                    code, and I am always eager to explore emerging technologies in the fields of robotics, automation, 
+                    and artificial intelligence.
+                </p>
 
-                    <p>Beyond my studies, I actively pursue personal projects that challenge me to learn new technologies and apply my knowledge in innovative ways. 
-                    I believe in writing clean, efficient, and maintainable code, and I am always eager to explore emerging technologies in the fields of robotics, automation, and artificial intelligence.</p>
-
-                    <div class="skills">
-                        <h3>Technologies & Skills</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>JavaScript</li>
-                            <li>HTML5 & CSS3</li>
-                            <li>Haskell</li>
-                            <li>R</li>
-                            <li>ROS2</li>
-                            <li>Linux</li>
-                            <li>Git</li>
-                            <li>FastAPI</li>
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>Expo Go</li>
-                        </ul>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fab fa-python"></i>
+                        <div class="skill-name">Python</div>
                     </div>
-
-                    <div class="education">
-                        <h3>Education</h3>
-                        <p>Bachelor in Computer Science<br>
-                           University of Luxembourg<br>
-                           2021 - 2025</p>
-                        <p style="margin-top: 1.5rem;">Master in Information and Computer Science<br>
-                           University of Luxembourg<br>
-                           2025 - Present</p>
-                        <div class="resume-download">
-                            <a href="/assets/cv/cv-latest.pdf" class="resume-button" target="_blank" download>
-                            <i class="fa-solid fa-file-pdf"></i> Download Resume
-                            </a>
-                            <p class="cv-updated">
-                              Last updated: <span id="cv-last-updated">Loading…</span>
-                            </p>
-                        </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js"></i>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react"></i>
+                        <div class="skill-name">React</div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-robot"></i>
+                        <div class="skill-name">ROS2</div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-java"></i>
+                        <div class="skill-name">Java</div>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-microchip"></i>
+                        <div class="skill-name">Embedded</div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
 
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-
-        <div class="project-grid" id="project-container">
-            
+            <div class="education-card">
+                <h3>Education</h3>
+                <div class="education-item">
+                    <div class="education-degree">Bachelor in Computer Science</div>
+                    <div class="education-school">University of Luxembourg</div>
+                    <div class="education-years">2021 - 2025</div>
+                </div>
+                <div class="education-item">
+                    <div class="education-degree">Master in Information and Computer Science</div>
+                    <div class="education-school">University of Luxembourg</div>
+                    <div class="education-years">2025 - Present</div>
+                </div>
+                <div class="resume-download">
+                    <a href="/assets/cv/cv-latest.pdf" class="resume-button" target="_blank" download>
+                        <i class="fa-solid fa-file-pdf"></i> Download Resume
+                    </a>
+                    <p class="cv-updated">
+                        Last updated: <span id="cv-last-updated">Loading…</span>
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Get In Touch</h2>
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+        <div class="section-header">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A selection of my work across robotics, web, and mobile development</p>
+        </div>
+
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="robotics">Robotics</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="embedded">Embedded</button>
+        </div>
+
+        <div class="projects-grid" id="project-container">
+            <!-- Projects will be loaded dynamically by script.js -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <div class="section-header">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">I'm always open to discussing new projects and opportunities</p>
+        </div>
+
         <div class="contact-content">
+            <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 2rem;">
+                Whether you have a question, want to collaborate on a project, or just want to say hi, 
+                feel free to reach out. I'll get back to you as soon as possible!
+            </p>
+
             <div class="contact-links">
-                <a href="mailto:perda2803@gmail.com">
-                    <i class="fa-solid fa-envelope"></i> Email
+                <a href="https://github.com/Davidpereira2803" class="contact-card" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span class="label">GitHub</span>
+                    <span class="value">@Davidpereira2803</span>
                 </a>
-                <a href="https://www.linkedin.com/in/davidpereira2803/" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com/Davidpereira2803" target="_blank">
-                    <i class="fa-brands fa-github"></i> GitHub
+
+                <a href="https://www.linkedin.com/in/davidpereira2803/" class="contact-card" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="label">LinkedIn</span>
+                    <span class="value">Connect with me</span>
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 David Pereira de Magalhães. All rights reserved.</p>
+        <p>&copy; <span id="copyright-year"></span> David Pereira de Magalhães. All rights reserved.</p>
+        
+        <div class="social-links">
+            <a href="https://github.com/Davidpereira2803" class="social-link" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/davidpereira2803/" class="social-link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:perda2803@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
     </footer>
 
-    <script src="scripts/background.js"></script>
+    <script>
+        // Set copyright year automatically
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll reveal animation
+        const reveals = document.querySelectorAll('.reveal');
+        const revealOnScroll = () => {
+            reveals.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        };
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
+
+        // Project filtering - will work after projects are loaded
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                const projectCards = document.querySelectorAll('.project-card');
+
+                projectCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        const categories = card.dataset.category ? card.dataset.category.split(' ') : [];
+                        if (categories.includes(filter)) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    }
+                });
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -5,14 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Project Detail</title>
-  <link rel="stylesheet" href="styles/styles.css" />
-  <script defer src="scripts/project-detail.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/project-detail.css" />
+  <script defer src="scripts/project-detail.js"></script>
 </head>
 <body>
   <div class="back-btn-wrapper">
-    <a href="index.html#projects" class="back-btn" style="margin-left: 2rem;">
+    <a href="index.html#projects" class="back-btn">
       <i class="fa-solid fa-arrow-left"></i> Back to Projects
     </a>
   </div>
@@ -21,7 +22,12 @@
   </div>
 
   <footer>
-    <p>&copy; 2026 David Pereira de Magalhães. All rights reserved.</p>
+    <p>&copy; <span id="copyright-year"></span> David Pereira de Magalhães. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Set copyright year automatically
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

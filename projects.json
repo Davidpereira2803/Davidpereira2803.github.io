@@ -6,7 +6,8 @@
       "icon": "fa-helicopter",
       "link": "https://github.com/Davidpereira2803/tello_ros_driver_TEMO",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/TemoEmotionBased/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/TemoEmotionBased/temo-table.png"],
-      "status": "finished"
+      "status": "finished",
+      "category": "robotics"
     },
     {
       "title": "Temo - Tello Mixed Reality Handcontrol",
@@ -15,7 +16,8 @@
       "icon": "fa-helicopter",
       "link": "https://github.com/Davidpereira2803/tello_mixed_reality_handcontrol",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/TemoMixedReality/tello.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/TemoMixedReality/temo-table.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/TemoMixedReality/circuit.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/TemoMixedReality/build.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/TemoMixedReality/Gauntlet.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/TemoMixedReality/HandMovements.png"],
-      "status": "finished"
+      "status": "finished",
+      "category": "robotics"
     },
     {
       "title": "RPI2-FreeRTOS-CAN-BUS",
@@ -24,7 +26,8 @@
       "icon": "fa-microchip",
       "link": "https://github.com/Davidpereira2803/RPI2-FreeRTOS-CAN-BUS",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/RPI2FreeRTOS/10led.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/RPI2FreeRTOS/3RPI.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/RPI2FreeRTOS/canbus.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/RPI2FreeRTOS/modelwithcola.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/RPI2FreeRTOS/modulecut.jpg", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/RPI2FreeRTOS/terminalmcp.png"],
-      "status": "finished"
+      "status": "finished",
+      "category": "embedded"
     },
     {
       "title": "Alma Da Beira Alta - Website",
@@ -33,7 +36,8 @@
       "icon": "fa-globe",
       "link": "https://github.com/Davidpereira2803/alma-da-beira-alta",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/AlmaDaBeiraAlta/welcome.png","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/AlmaDaBeiraAlta/services.png","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/AlmaDaBeiraAlta/joincommunity.png"],
-      "status": "prototype/ in production"
+      "status": "prototype/ in production",
+      "category": "web"
     },
     {
       "title": "Imposter Hunt",
@@ -42,7 +46,8 @@
       "icon": "fa-user-secret",
       "link": "https://github.com/Davidpereira2803/imposter-hunt",
       "images": [],
-      "status": "prototype/ testing"
+      "status": "production",
+      "category": "mobile"
     },
     {
       "title": "ROS Monitor",
@@ -52,7 +57,8 @@
       "link": "https://github.com/Davidpereira2803/ground",
       "images": [],
       "videos": ["assets/images/ROSMonitor/customserver.mp4"],
-      "status": "prototype"
+      "status": "prototype",
+      "category": "mobile robotics"
     },
     {
       "title": "LetzGrade Mobile App",
@@ -62,7 +68,8 @@
       "link": "https://github.com/Davidpereira2803/letzgrade-mobile",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app1.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app2.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app3.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app4.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app5.jpg","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app6.jpg",
       "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeMobile/letzgrade-app7.jpg"],
-      "status": "prototype"
+      "status": "prototype",
+      "category": "mobile"
     },
     {
       "title": "LetzGrade Web",
@@ -71,6 +78,7 @@
       "icon": "fa-globe",
       "link": "https://github.com/Davidpereira2803/letzgrade.web",
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeWeb/LetzGrade-web1.png","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeWeb/LetzGrade-web2.png"],
-      "status": "prototype"
+      "status": "prototype",
+      "category": "web"
     }
   ]
