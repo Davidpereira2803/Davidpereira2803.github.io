@@ -21,6 +21,27 @@ document.addEventListener("DOMContentLoaded", () => {
       const project = projects[index];
       document.title = `${project.title} - Project`;
 
+      let videosHTML = "";
+      if (project.videos && project.videos.length > 0) {
+        videosHTML = `
+          <div class="project-content-section">
+            <h2>Videos</h2>
+            <div class="video-grid">
+              ${project.videos.map(
+                (url) => `
+                  <div class="video-container">
+                    <video controls autoplay loop muted playsinline>
+                      <source src="${toRawImage(url)}" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                `
+              ).join("")}
+            </div>
+          </div>
+        `;
+      }
+
       let imagesHTML = "";
       if (project.images && project.images.length > 0) {
         imagesHTML = `
@@ -54,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </a>
         </div>
 
+        ${videosHTML}
         ${imagesHTML}
       `;
     })

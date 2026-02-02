@@ -42,3 +42,30 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML = `<p style="color: red;">Failed to load projects. Please try again later.</p>`;
       });
   });
+
+
+async function loadCvUpdatedDate() {
+  try {
+    const res = await fetch('/assets/cv/cv-info.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('Failed to load cv-info.json');
+    const info = await res.json();
+
+    // Parse UTC timestamp
+    const dt = new Date(info.updated_at_utc);
+
+    // Format nicely in the visitor's locale
+    const formatted = dt.toLocaleString(undefined, {
+      year: 'numeric',
+      month: 'short',
+      day: '2-digit',
+    });
+
+    document.getElementById('cv-last-updated').textContent = formatted;
+  } catch (e) {
+    // Fallback if fetch fails
+    document.getElementById('cv-last-updated').textContent = '—';
+  }
+}
+
+loadCvUpdatedDate();
+
