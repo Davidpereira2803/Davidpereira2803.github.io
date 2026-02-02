@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
               ${project.videos.map(
                 (url) => `
                   <div class="video-container">
-                    <video controls>
+                    <video controls autoplay loop muted playsinline>
                       <source src="${toRawImage(url)}" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
