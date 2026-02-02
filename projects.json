@@ -51,7 +51,7 @@
       "icon": "fa-robot",
       "link": "https://github.com/Davidpereira2803/ground",
       "images": [],
-      "video": ["assets/images/ROSMonitor/customserver.mp4"],
+      "videos": ["assets/images/ROSMonitor/customserver.mp4"],
       "status": "prototype"
     },
     {
