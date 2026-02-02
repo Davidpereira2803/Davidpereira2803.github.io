@@ -56,7 +56,6 @@
       "icon": "fa-robot",
       "link": "https://github.com/Davidpereira2803/ground",
       "images": [],
-      "videos": ["assets/images/ROSMonitor/customserver.mp4"],
       "status": "prototype",
       "category": "mobile robotics"
     },
@@ -80,5 +79,16 @@
       "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeWeb/LetzGrade-web1.png","https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/LetzGradeWeb/LetzGrade-web2.png"],
       "status": "prototype",
       "category": "web"
+    },
+    {
+      "title": "Custom MicroK8s Homelab Server",
+      "description": "A custom-built homelab server repurposed from a laptop, running Ubuntu Server with MicroK8s for Kubernetes orchestration. The setup leverages Docker containers for application deployment and management. This infrastructure serves as a personal learning environment for exploring containerization, orchestration, and distributed systems while hosting various services and experiments.",
+      "tech": ["MicroK8s", "Kubernetes", "Docker", "Ubuntu Server", "Linux"],
+      "icon": "fa-server",
+      "link": "#",
+      "images": ["assets/images/Homelab/customserverrender.png"],
+      "videos": ["assets/images/Homelab/customserverrender.mp4"],
+      "status": "in-progress",
+      "category": "infrastructure"
     }
   ]
