@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio Website
+# Personal Portfolio Website
 
 A clean, modern, and responsive portfolio website built with **HTML**, **CSS**, and **JavaScript** to showcase personal projects, skills, and contact information.
 
