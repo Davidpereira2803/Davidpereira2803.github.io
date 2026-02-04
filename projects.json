@@ -87,7 +87,7 @@
       "tech": ["MicroK8s", "Kubernetes", "Docker", "Ubuntu Server", "Linux"],
       "icon": "fa-server",
       "link": "#",
-      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/HomeLab/customserverrender.png"],
+      "images": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/HomeLab/customserverrender.png", "https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/HomeLab/diagram.png"],
       "videos": ["https://github.com/Davidpereira2803/Davidpereira2803.github.io/blob/main/assets/images/HomeLab/customserverrender.mp4"],
       "status": "in-progress",
       "category": "infrastructure"
