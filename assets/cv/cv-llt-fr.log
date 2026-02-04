@@ -3,8 +3,8 @@ entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**cv-llt.tex
-(./cv-llt.tex
+**cv-llt-fr.tex
+(./cv-llt-fr.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
 (/opt/texlive/texdir/texmf-dist/tex/latex/base/article.cls
@@ -979,8 +979,8 @@ put line 714.
 Package nfssext-cfr Warning: Patching font initialisation macro for typewriter.
  on input line 723.
 
-) (./cv-llt.aux)
-\openout1 = `cv-llt.aux'.
+) (./cv-llt-fr.aux)
+\openout1 = `cv-llt-fr.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/lmm/m/it on input line 154.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
@@ -1081,9 +1081,9 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 154.
-(./cv-llt.out) (./cv-llt.out)
+(./cv-llt-fr.out) (./cv-llt-fr.out)
 \@outlinefile=\write5
-\openout5 = `cv-llt.out'.
+\openout5 = `cv-llt-fr.out'.
 
 \c@lstlisting=\count374
 
@@ -1153,22 +1153,22 @@ r/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/opt/texlive/texdir/tex
 mf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/opt/texlive/texdir/texmf-di
 st/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/opt/texlive/texdir/texmf-dist/
 fonts/enc/dvips/lm/lm-mathsy.enc}{/opt/texlive/texdir/texmf-dist/fonts/enc/dvip
-s/cfr-lm/t1-clm.enc} <./photo.jpg>] (./cv-llt.aux)
+s/cfr-lm/t1-clm.enc} <./photo.jpg>] (./cv-llt-fr.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-29>
  ***********
-Package rerunfilecheck Info: File `cv-llt.out' has not changed.
-(rerunfilecheck)             Checksum: 4EA8E9E73B28B74A92F356634ECD41C4;461.
+Package rerunfilecheck Info: File `cv-llt-fr.out' has not changed.
+(rerunfilecheck)             Checksum: 36EA9BBE1202311B80C509548DDF57D1;547.
  ) 
 Here is how much of TeX's memory you used:
  33204 strings out of 467538
- 671051 string characters out of 5421637
- 1187569 words of memory out of 5000000
+ 671108 string characters out of 5421637
+ 1187592 words of memory out of 5000000
  61548 multiletter control sequences out of 15000+600000
  670339 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,108p,1245b,864s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,11n,108p,1248b,864s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/texdir/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5B
 rands-Regular.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/public/fontawesom
 e5/FontAwesome5Free-Solid.pfb></opt/texlive/texdir/texmf-dist/fonts/type1/publi
@@ -1181,7 +1181,7 @@ xmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></opt/texlive/texdir/texmf-di
 st/fonts/type1/public/cm-super/sfrm1095.pfb></opt/texlive/texdir/texmf-dist/fon
 ts/type1/public/cm-super/sfti0900.pfb></opt/texlive/texdir/texmf-dist/fonts/typ
 e1/public/cm-super/sfxc1200.pfb>
-Output written on cv-llt.pdf (1 page, 452622 bytes).
+Output written on cv-llt-fr.pdf (1 page, 457953 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  91 compressed objects within 1 object stream

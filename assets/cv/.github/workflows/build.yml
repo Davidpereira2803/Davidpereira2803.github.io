@@ -12,10 +12,15 @@ jobs:
     - name: Checkout CV repo
       uses: actions/checkout@v4
 
-    - name: Compile LaTeX CV
+    - name: Compile LaTeX CV (EN)
       uses: xu-cheng/latex-action@v2
       with:
         root_file: cv-llt.tex
+
+    - name: Compile LaTeX CV (FR)
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: cv-llt-fr.tex
 
     - name: Create versioned filenames + info
       shell: bash
@@ -26,20 +31,26 @@ jobs:
         DATE_UTC="$(date -u +%F)"
         ISO_UTC="$(date -u +%FT%TZ)"
 
-        LATEST="cv-latest.pdf"
-        VERSIONED="cv-${DATE_UTC}_${SHORT_SHA}.pdf"
+        LATEST_EN="cv-latest.pdf"
+        LATEST_FR="cv-latest-fr.pdf"
+        VERSIONED_EN="cv-${DATE_UTC}_${SHORT_SHA}.pdf"
+        VERSIONED_FR="cv-fr-${DATE_UTC}_${SHORT_SHA}.pdf"
 
-        # output from latex-action is cv-llt.pdf
-        mv cv-llt.pdf "$LATEST"
+        # outputs from latex-action are cv-llt.pdf and cv-llt-fr.pdf
+        mv cv-llt.pdf "$LATEST_EN"
+        mv cv-llt-fr.pdf "$LATEST_FR"
 
         mkdir -p versions
-        cp "$LATEST" "versions/$VERSIONED"
+        cp "$LATEST_EN" "versions/$VERSIONED_EN"
+        cp "$LATEST_FR" "versions/$VERSIONED_FR"
 
         cat > cv-info.json <<EOF
         {
           "updated_at_utc": "$ISO_UTC",
-          "latest_pdf": "$LATEST",
-          "versioned_pdf": "versions/$VERSIONED"
+          "latest_pdf": "$LATEST_EN",
+          "latest_pdf_fr": "$LATEST_FR",
+          "versioned_pdf": "versions/$VERSIONED_EN",
+          "versioned_pdf_fr": "versions/$VERSIONED_FR"
         }
         EOF
 
