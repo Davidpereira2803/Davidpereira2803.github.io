@@ -1,0 +1,332 @@
+%-------------------------
+% Resume in Latex
+% Author
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{comment}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\usepackage{tikz}
+
+\newcommand{\skillblocks}[1]{%
+\begin{tikzpicture}[baseline]
+\foreach \i in {1,...,5} {
+  \ifnum\i>#1
+    \draw[fill=black!15] (0.5*\i,0) rectangle +(0.4,0.12);
+  \else
+    \draw[fill=black!70] (0.5*\i,0) rectangle +(0.4,0.12);
+  \fi
+}
+\end{tikzpicture}
+}
+
+
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}  \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \text{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Pereira de Magalhaes David} % Your Name
+\newcommand{\course}{Étudiant en Master in Information and Computer Sciences} % Your Program
+\newcommand{\phone}{691244236} % Your Phone Number
+\newcommand{\emaila}{perda2803@gmail.com} %Email 1
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{2.35cm}{%
+\includegraphics[width=2.3cm,clip]{photo.jpg}
+}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +352-\phone}\\
+   {63, Rue Joseph Philippart, L-4845 Rodange (Luxembourg)}&  \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}}\\
+     &  \href{https://github.com/Davidpereira2803}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {Davidpereira2803}} \\
+    & \href{https://www.linkedin.com/in/davidpereira2803/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {davidpereira2803}}\\
+   \course & \href{https://pearlabs.dev/}{\raisebox{0.0\height}{\footnotesize \faGlobe}\ {pearlabs.dev}}
+\end{tabularx}
+}
+
+% \parbox{3.0cm}{%
+% \flushright \includegraphics[width=2cm,clip]{nitp_logo.png}
+% }
+
+
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Éducation}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Lycée Mathias Adam}
+      {TE-ALL}{2015-2018}
+    \resumeSubheading
+      {Lycée Mathias Adam}
+      {Section Générale Ingénieur (GIG)}{2018-2022}
+    \resumeSubheading
+      {Université de Luxembourg (Université de Namur Erasmus)}
+      {Bachelor in Computer Science}{2022-2025}
+    \resumeSubheading
+    {University of Luxembourg}
+    {Master in Information and Computer Sciences}{2025-Présent}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Expérience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Costantini SA}{}
+      {Manoeuvre (Job étudiant)}{2019-2025}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {A aidé à la logistique sur site et à la manipulation des équipements de construction}
+    \item {A développé des compétences en travail d’équipe et en gestion du temps dans un environnement à rythme soutenu}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-8.5mm}
+
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projets Personnels}}
+\resumeSubHeadingListStart
+
+    \resumeProject
+      {Cluster  MicroK8s  (HomeLab)} %Project Name
+      {Exécution de plusieurs applications sur un serveur MicroK8s double noeud auto-construit.} %Project Name, Location Name
+      {\href{https://pearlabs.dev/project.html?index=8}{\raisebox{0.0\height}{\footnotesize \faGlobe}\ {pearlabs.dev}}} %Github Link
+        
+      \resumeItemListStart
+        \item {Outils \& technologies utilisés : Ubuntu Server, MicroK8s}
+        \item {Conception et déploiement d’un HomeLab Kubernetes avec MicroK8s sur Ubuntu Server, utilisant un ordinateur portable reconditionné et un boîtier sur mesure comme nœud worker uniquement, ainsi qu’un HP ProDesk comme noeud contrôleur + worker.}
+    \resumeItemListEnd
+    \vspace{-2mm}
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Compétences et centres d’intérêt}}
+
+\begin{itemize}[leftmargin=0.05in, label={}]
+\small{\item{
+
+\begin{multicols}{2}
+
+\textbf{Langues :}
+\begin{tabularx}{\linewidth}{@{}p{4cm} X@{}}
+Portugais (langue maternelle) & \skillblocks{5} \\
+Luxembourgeois                & \skillblocks{5} \\
+Français                      & \skillblocks{4} \\
+Anglais                       & \skillblocks{4} \\
+Allemand                      & \skillblocks{3} \\
+\end{tabularx}
+
+\columnbreak
+
+\textbf{Langages de programmation}{ : } \\
+Python, JavaScript, Java \\
+\vspace{2pt}
+
+\textbf{DevOps et infrastructure}{ : } \\
+Linux, Docker, Kubernetes, MicroK8s \\
+\vspace{2pt}
+
+\textbf{Frameworks et outils}{ : } \\
+ROS, FastAPI, React, React Native \\
+\vspace{2pt}
+
+\textbf{Bases de données}{ : } \\
+Firebase, SQLite \\
+\vspace{2pt}
+
+\textbf{Contrôle de version}{ : } \\
+Git, GitHub \\
+\vspace{2pt}
+
+\textbf{Matériel et systèmes embarqués}{ : } \\
+Raspberry Pi, drone DJI Tello, capteurs, GPIO \\
+\vspace{2pt}
+
+\textbf{CAO et fabrication numérique}{ : } \\
+Impression 3D (FDM), modélisation 3D (Fusion 360) \\
+\vspace{2pt}
+
+\end{multicols}
+
+}}
+\end{itemize}
+\vspace{-16pt}
+
+
+
+
+
+\begin{comment}
+%-----------Positions of Responsibility-----------------
+\section{\textbf{Positions of Responsibility}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Position, } % Position
+    {Club or Event} %Club,Event
+    {Position tenure} %Tenure Period
+\resumePOR{Position, } % Position
+    {Club or Event} %Club,Event
+    {Position tenure} %Tenure Period
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+
+
+
+
+%-----------Achievements-----------------
+\section{\textbf{Achievements}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{Achievement } % Award
+    {description} % Event
+    {Event dates} %Event Year
+    
+\resumePOR{Achievement } % Award
+    {description} % Event
+    {Event dates} %Event Year
+\resumeSubHeadingListEnd
+\vspace{-5mm}
+\setlength{\footskip}{4.08003pt}
+\end{comment}
+
+%-------------------------------------------
+\end{document}
