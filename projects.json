@@ -82,8 +82,8 @@
       "category": "web"
     },
     {
-      "title": "Custom MicroK8s Homelab Server",
-      "description": "A custom-built homelab server repurposed from a laptop, running Ubuntu Server with MicroK8s for Kubernetes orchestration. The setup leverages Docker containers for application deployment and management. This infrastructure serves as a personal learning environment for exploring containerization, orchestration, and distributed systems while hosting various services and experiments.",
+      "title": "2 Node Custom MicroK8s Homelab Server",
+      "description": "A custom-built homelab server repurposed from a laptop, running Ubuntu Server with MicroK8s for Kubernetes orchestration. The setup leverages Docker containers for application deployment and management. This infrastructure serves as a personal learning environment for exploring containerization, orchestration, and distributed systems while hosting various services and experiments. It now runs as a 2-node cluster with one control + worker node (HP ProDesk) and one worker-only node (custom build).",
       "tech": ["MicroK8s", "Kubernetes", "Docker", "Ubuntu Server", "Linux"],
       "icon": "fa-server",
       "link": "#",
