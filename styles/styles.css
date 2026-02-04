@@ -323,11 +323,16 @@
             margin-top: 2rem;
             padding-top: 2rem;
             border-top: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            align-items: center;
         }
 
         .resume-button {
             display: inline-flex;
             align-items: center;
+            justify-content: center;
             gap: 0.7rem;
             padding: 1rem 2rem;
             background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
@@ -337,6 +342,9 @@
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 5px 20px rgba(255, 51, 102, 0.3);
+            width: 100%;
+            max-width: 320px;
+            min-height: 52px;
         }
 
         .resume-button:hover {
