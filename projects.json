@@ -82,7 +82,7 @@
       "category": "web"
     },
     {
-      "title": "2 Node Custom MicroK8s Homelab Server",
+      "title": "2 Node MicroK8s Homelab Server",
       "description": "Pearlabs Homelab is a two-node MicroK8s Kubernetes platform designed like a small production environment. An HP ProDesk runs the control plane, networking, observability stack, and a Cloudflare Tunnel connector, while a second node is a custom build repurposed from an old laptop that handles application workloads and persistent storage. Ingress is managed by NGINX, internal LoadBalancer IPs are provided by MetalLB, and all external access goes through Cloudflare Zero Trust with no router port forwarding. The stack includes full monitoring and logging via Prometheus, Grafana, Loki, and Tempo, plus a dedicated Nextcloud deployment pinned to a storage-backed node. The result is a clean separation between infrastructure and apps, secure exposure without public IPs, and a platform ready for expansion with GitOps, backups, and higher availability.",
       "tech": ["MicroK8s", "Kubernetes", "Docker", "Ubuntu Server", "Linux"],
       "icon": "fa-server",
