@@ -1,37 +1,6 @@
-# System files
-.DS_Store
-Thumbs.db
+node_modules
 
-# Editor directories and files
-.idea/
-.vscode/
-*.swp
-*.swo
+AGENTS.md
+CLAUDE.md
 
-# Dependencies
-node_modules/
-package-lock.json
-
-# Environment files
-.env
-.env.local
-
-# Build output
-dist/
-build/
-
-# Debug logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Assets
-#assets/images/*
-#assets/resume.pdf
-#*.jpg
-#*.jpeg
-#*.png
-#*.gif
-#*.svg
-#*.pdf
-#*.ico
+next-env.d.ts

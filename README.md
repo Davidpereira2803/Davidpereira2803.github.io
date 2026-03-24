@@ -1,38 +1,70 @@
-# Personal Portfolio Website
+# Modern Developer Portfolio
 
-A clean, modern, and responsive portfolio website built with **HTML**, **CSS**, and **JavaScript** to showcase personal projects, skills, and contact information.
+A high-performance, visually striking portfolio website built for computer science students and software engineers. Designed to be professional, innovative, and memorable.
 
-![Screenshot](https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/websitescreenshot.png)
+![Portfolio Preview](https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=2000&auto=format&fit=crop)
 
-## Overview
+## ✨ Features
 
-This portfolio website is designed to present my academic background, technical expertise, and personal projects in a professional and engaging way. It features:
+-   **Modern Tech Stack:** Built with Next.js 14 (App Router), TypeScript, and Tailwind CSS.
+-   **Smooth Animations:** Powered by Framer Motion for scroll-linked interactions and page transitions.
+-   **Responsive Design:** Fully mobile-first layout that looks great on any device.
+-   **Dark Mode Default:** A polished, engineer-focused aesthetic with deep zinc backgrounds and vibrant accents.
+-   **Reusable Components:** Modular UI architecture for easy scalability.
+-   **Performance Focused:** Optimized images, fonts (`next/font`), and code splitting.
 
-- About Me section
-- Skills & Technologies
-- Dynamic Projects section (data-driven via `projects.json`)
-- Dedicated project detail pages (`project.html?index=n`)
-- Contact Information
-- Dark-themed design with red accents and subtle animations
+## 🛠️ Tech Stack
 
-## Live Demo
+-   **Framework:** [Next.js](https://nextjs.org/)
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+-   **Animation:** [Framer Motion](https://www.framer.com/motion/)
+-   **Icons:** [Lucide React](https://lucide.dev/)
+-   **Fonts:** Inter & JetBrains Mono
 
-[Visit the Live Portfolio](https://davidpereira2803.github.io/)
+## 🚀 Getting Started
 
-## Technologies Used
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/portfolio.git
+    cd portfolio
+    ```
 
-- **HTML5** – Structure and semantic content
-- **CSS3** – Custom animations, gradients, layout
-- **JavaScript** – Dynamic project rendering from JSON
-- **Font Awesome** – Icons throughout the site
-- **Google Fonts** – Clean and modern typography (Inter)
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
 
-## Features
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
 
-- Responsive design — optimized for desktop, tablet, and mobile
-- Modular project system using `projects.json`
-- Project categories: robotics, web, mobile, embedded, infrastructure
-- Dynamic detail pages for each project
-- Screenshots, videos, and tech tags for each project
-- Light animations and hover effects
-- Sticky footer and adaptive navigation bar
+4.  **Open [http://localhost:3000](http://localhost:3000) in your browser.**
+
+## 🎨 Customization
+
+-   **Content:** Edit the data files in `src/data/` to update your projects, experience, and social links.
+-   **Theme:** Modify `tailwind.config.ts` and `globals.css` to change colors and fonts.
+-   **Components:** Add new sections in `src/components/sections/`.
+
+## 📂 Project Structure
+
+```
+src/
+├── app/              # Next.js App Router pages
+├── components/       # React components
+│   ├── ui/           # Reusable base components (Button, Card, etc.)
+│   ├── sections/     # Page sections (Hero, About, Projects, etc.)
+│   └── layout/       # Global layout components (Navbar, Footer)
+├── data/             # Content data (easy to update)
+├── lib/              # Utilities
+└── types/            # TypeScript definitions
+```
+
+## 📄 License
+
+MIT License. Free to use for your own portfolio!
