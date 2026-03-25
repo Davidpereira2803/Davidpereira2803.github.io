@@ -2,9 +2,9 @@
 
 A high-performance, visually striking portfolio website built for computer science students and software engineers. Designed to be professional, innovative, and memorable.
 
-![Portfolio Preview](https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=2000&auto=format&fit=crop)
+![Portfolio Preview](https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/websitescreenshot.png)
 
-## ✨ Features
+## Features
 
 -   **Modern Tech Stack:** Built with Next.js 14 (App Router), TypeScript, and Tailwind CSS.
 -   **Smooth Animations:** Powered by Framer Motion for scroll-linked interactions and page transitions.
@@ -13,58 +13,48 @@ A high-performance, visually striking portfolio website built for computer scien
 -   **Reusable Components:** Modular UI architecture for easy scalability.
 -   **Performance Focused:** Optimized images, fonts (`next/font`), and code splitting.
 
-## 🛠️ Tech Stack
 
--   **Framework:** [Next.js](https://nextjs.org/)
--   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
--   **Animation:** [Framer Motion](https://www.framer.com/motion/)
--   **Icons:** [Lucide React](https://lucide.dev/)
--   **Fonts:** Inter & JetBrains Mono
+# David Pereira — Portfolio Website
 
-## 🚀 Getting Started
+A modern, high-performance portfolio website to showcase my projects, experience, and skills as a computer science student and software engineer.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/portfolio.git
-    cd portfolio
-    ```
+## Overview
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    # or
-    yarn install
-    # or
-    pnpm install
-    ```
+This site is designed to present my academic background, technical expertise, and personal projects in a professional and engaging way. It features:
 
-3.  **Run the development server:**
-    ```bash
-    npm run dev
-    ```
+- **About Me** — Introduction and background
+- **Experience** — Timeline of relevant roles and achievements
+- **Projects** — Dynamic, data-driven project gallery with detail pages
+- **Contact** — Easy way to reach out
+- **Responsive Design** — Looks great on desktop, tablet, and mobile
+- **Dark Theme** — Clean, modern look with subtle animations
 
-4.  **Open [http://localhost:3000](http://localhost:3000) in your browser.**
+## Built With
 
-## 🎨 Customization
+- [Next.js 14 (App Router)](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/) (animations)
+- [Lucide React](https://lucide.dev/) (icons)
 
--   **Content:** Edit the data files in `src/data/` to update your projects, experience, and social links.
--   **Theme:** Modify `tailwind.config.ts` and `globals.css` to change colors and fonts.
--   **Components:** Add new sections in `src/components/sections/`.
+## Live Demo
 
-## 📂 Project Structure
+[davidpereira2803.github.io](https://davidpereira2803.github.io/)
+
+## Project Structure
 
 ```
 src/
-├── app/              # Next.js App Router pages
-├── components/       # React components
-│   ├── ui/           # Reusable base components (Button, Card, etc.)
+├── app/              # App Router pages and routes
+├── components/       # UI and layout components
+│   ├── ui/           # Reusable UI primitives
 │   ├── sections/     # Page sections (Hero, About, Projects, etc.)
-│   └── layout/       # Global layout components (Navbar, Footer)
-├── data/             # Content data (easy to update)
+│   └── layout/       # Navbar, Footer, etc.
+├── data/             # Project, experience, and social data
 ├── lib/              # Utilities
-└── types/            # TypeScript definitions
 ```
 
-## 📄 License
+---
 
-MIT License. Free to use for your own portfolio!
+© David Pereira. All rights reserved.
+│   └── layout/       # Global layout components (Navbar, Footer)
