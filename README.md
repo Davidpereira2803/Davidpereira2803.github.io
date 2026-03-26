@@ -2,7 +2,7 @@
 
 A high-performance, visually striking portfolio website built for computer science students and software engineers. Designed to be professional, innovative, and memorable.
 
-![Portfolio Preview](https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/websitescreenshot.png)
+![Portfolio Preview](https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/dev/assets/images/websitescreenshot.png)
 
 ## Features
 
