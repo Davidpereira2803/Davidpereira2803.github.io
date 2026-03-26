@@ -8,10 +8,10 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 
 const NAV_ITEMS = [
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "#projects" },
-  { name: "Experience", href: "#experience" },
-  { name: "Contact", href: "#contact" },
+  { name: "About", href: "/#about" },
+  { name: "Projects", href: "/#projects" },
+  { name: "Experience", href: "/#experience" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 export function Navbar() {
