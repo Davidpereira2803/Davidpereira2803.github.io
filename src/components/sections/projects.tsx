@@ -74,7 +74,7 @@ export function Projects() {
                 transition={{ duration: 0.3 }}
               >
                 <Card className="group relative overflow-hidden bg-zinc-900 border-zinc-800 h-full flex flex-col hover:border-primary/50 transition-all duration-500">
-                  <Link href={`/projects/${project.slug}.html`} className="cursor-pointer">
+                  <Link href={`/projects/${project.slug}`} className="cursor-pointer">
                     <div className="relative h-64 w-full overflow-hidden">
                       {isVideo ? (
                         <video
