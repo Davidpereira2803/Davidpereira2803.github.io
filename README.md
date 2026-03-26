@@ -1,4 +1,4 @@
-# Modern Developer Portfolio
+# Modern Developer Portfolio v2.0
 
 A high-performance, visually striking portfolio website built for computer science students and software engineers. Designed to be professional, innovative, and memorable.
 
