@@ -2,4 +2,8 @@ node_modules
 
 .next/
 
-monia-web
+.vscode/
+
+monia-web/
+
+out/
