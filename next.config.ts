@@ -1,11 +1,8 @@
 import type { NextConfig } from "next";
 
-
-const repoName = "Davidpereira2803.github.io";
 const nextConfig: NextConfig = {
   output: "export",
-  assetPrefix: `/${repoName}`,
-  basePath: `/${repoName}`,
+  basePath: "/Davidpereira2803.github.io",
   images: {
     remotePatterns: [
       {
