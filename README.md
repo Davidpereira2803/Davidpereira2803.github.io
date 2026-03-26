@@ -57,4 +57,3 @@ src/
 ---
 
 © David Pereira. All rights reserved.
-│   └── layout/       # Global layout components (Navbar, Footer)
