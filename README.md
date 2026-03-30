@@ -1,4 +1,4 @@
-# Modern Developer Portfolio v2.0
+# Personal Portfolio v2.0
 
 A high-performance, visually striking portfolio website built for computer science students and software engineers. Designed to be professional, innovative, and memorable.
 
@@ -6,12 +6,13 @@ A high-performance, visually striking portfolio website built for computer scien
 
 ## Features
 
--   **Modern Tech Stack:** Built with Next.js 14 (App Router), TypeScript, and Tailwind CSS.
+-   **Modern Tech Stack:** Built with Next.js 16 (App Router), React 19, and Tailwind CSS 4.
 -   **Smooth Animations:** Powered by Framer Motion for scroll-linked interactions and page transitions.
 -   **Responsive Design:** Fully mobile-first layout that looks great on any device.
 -   **Dark Mode Default:** A polished, engineer-focused aesthetic with deep zinc backgrounds and vibrant accents.
 -   **Reusable Components:** Modular UI architecture for easy scalability.
 -   **Performance Focused:** Optimized images, fonts (`next/font`), and code splitting.
+-   **Automated CV Updates:** Integrated pipeline that automatically syncs the latest CV versions (EN/FR) from the LaTeX source.
 
 
 # David Pereira — Portfolio Website
@@ -25,35 +26,30 @@ This site is designed to present my academic background, technical expertise, an
 - **About Me** — Introduction and background
 - **Experience** — Timeline of relevant roles and achievements
 - **Projects** — Dynamic, data-driven project gallery with detail pages
+- **Curriculum Vitae** — Dedicated download section for English and French versions with automated updates
 - **Contact** — Easy way to reach out
 - **Responsive Design** — Looks great on desktop, tablet, and mobile
 - **Dark Theme** — Clean, modern look with subtle animations
 
 ## Built With
 
-- [Next.js 14 (App Router)](https://nextjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
+- [Next.js 16 (App Router)](https://nextjs.org/)
+- [React 19](https://react.dev/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/) (animations)
 - [Lucide React](https://lucide.dev/) (icons)
-- Github Actions to deploy everything 
+
+## CV Automation Pipeline
+
+This project features a specialized automation for CV management:
+1. **Source Sync:** The CV is maintained as LaTeX (often via Overleaf).
+2. **Auto-Compile:** A GitHub Action in the CV repository compiles the LaTeX source into PDF.
+3. **Auto-Push:** The compiled PDFs are pushed to the `assets/cv/` directory of this portfolio.
+4. **Deploy Sync:** During the portfolio's deployment (GitHub Actions), the latest `cv-latest.pdf` and `cv-latest-fr.pdf` are automatically copied to the `public/cv` folder, ensuring the download links on the live site always point to the most recent version.
 
 ## Live Demo
 
 [davidpereira2803.github.io](https://davidpereira2803.github.io/)
-
-## Project Structure
-
-```
-src/
-├── app/              # App Router pages and routes
-├── components/       # UI and layout components
-│   ├── ui/           # Reusable UI primitives
-│   ├── sections/     # Page sections (Hero, About, Projects, etc.)
-│   └── layout/       # Navbar, Footer, etc.
-├── data/             # Project, experience, and social data
-├── lib/              # Utilities
-```
 
 ---
 

@@ -49,33 +49,14 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col gap-4 sm:flex-row items-center justify-center"
+          className="flex flex-col gap-4 sm:flex-row"
         >
-          <div className="flex flex-col gap-4 sm:flex-row w-full sm:w-auto">
-            <a href="#projects" className={cn(buttonVariants({ size: "lg" }), "gap-2")}>
-              View Work <ArrowRight className="h-4 w-4" />
-            </a>
-            <a href="#contact" className={buttonVariants({ variant: "outline", size: "lg" })}>
-              Contact Me
-            </a>
-          </div>
-          
-          <div className="flex gap-2 w-full sm:w-auto justify-center border-t sm:border-t-0 sm:border-l border-zinc-800 pt-4 sm:pt-0 sm:pl-4">
-            <a 
-              href="/cv/cv-en.pdf" 
-              download="David_Pereira_CV_EN.pdf"
-              className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "gap-2 flex-1 sm:flex-none")}
-            >
-              <Download className="h-4 w-4" /> CV (EN)
-            </a>
-            <a 
-              href="/cv/cv-fr.pdf" 
-              download="David_Pereira_CV_FR.pdf"
-              className={cn(buttonVariants({ variant: "secondary", size: "lg" }), "gap-2 flex-1 sm:flex-none")}
-            >
-              <Download className="h-4 w-4" /> CV (FR)
-            </a>
-          </div>
+          <a href="#projects" className={cn(buttonVariants({ size: "lg" }), "gap-2")}>
+            View Work <ArrowRight className="h-4 w-4" />
+          </a>
+          <a href="#contact" className={buttonVariants({ variant: "outline", size: "lg" })}>
+            Contact Me
+          </a>
         </motion.div>
       </div>
 
