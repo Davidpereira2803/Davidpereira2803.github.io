@@ -36,6 +36,7 @@ This site is designed to present my academic background, technical expertise, an
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion](https://www.framer.com/motion/) (animations)
 - [Lucide React](https://lucide.dev/) (icons)
+- Github Actions to deploy everything 
 
 ## Live Demo
 
