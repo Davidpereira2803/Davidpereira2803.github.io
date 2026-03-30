@@ -3,7 +3,9 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Bot, Cpu, Globe, Code2 } from "lucide-react";
+import { Bot, Cpu, Globe, Code2, Download } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const SKILLS = [
   "Python",
@@ -120,6 +122,32 @@ export function About() {
               {skill}
             </Badge>
           ))}
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        viewport={{ once: true }}
+        className="mt-16 flex flex-col items-center gap-4 text-center"
+      >
+        <p className="text-muted-foreground">Interested in my full background?</p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a 
+            href="/cv/cv-en.pdf" 
+            download="David_Pereira_CV_EN.pdf"
+            className={cn(buttonVariants({ variant: "outline", size: "lg" }), "gap-2")}
+          >
+            <Download className="h-4 w-4" /> Download CV (English)
+          </a>
+          <a 
+            href="/cv/cv-fr.pdf" 
+            download="David_Pereira_CV_FR.pdf"
+            className={cn(buttonVariants({ variant: "outline", size: "lg" }), "gap-2")}
+          >
+            <Download className="h-4 w-4" /> Download CV (French)
+          </a>
         </div>
       </motion.div>
     </section>
