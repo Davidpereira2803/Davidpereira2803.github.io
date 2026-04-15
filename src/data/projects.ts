@@ -92,19 +92,6 @@ export const PROJECTS: Project[] = [
     status: "in production"
   },
   {
-    slug: "imposter-hunt",
-    title: "Imposter Hunt",
-    description: "Fast-paced social deduction game with AI-backed generation API for custom word lists, on a single shared device.",
-    longDescription: "Imposter Hunt is a fast-paced pass-and-play social deduction game where players try to identify the Imposter on a single shared device. Players receive a secret word except the Imposter, who must blend in and guess the word after surviving the voting rounds. The project features an AI-backed generation API that lets users create custom word lists from their own input.",
-    tags: ["React Native", "Expo", "Zustand", "AI API"],
-    link: "https://github.com/Davidpereira2803/imposter-hunt",
-    repo: "https://github.com/Davidpereira2803/imposter-hunt",
-    productPage: "https://pearlabs.dev/imposter-hunt",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop",
-    category: "Mobile",
-    status: "production"
-  },
-  {
     slug: "ros-monitor",
     title: "ROS Monitor",
     description: "Mobile application for real-time monitoring and control of ROS topics, services, and parameters through a mobile interface.",

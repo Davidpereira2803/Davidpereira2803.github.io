@@ -1,0 +1,39 @@
+name: Receive project metadata sync
+
+on:
+  repository_dispatch:
+    types: [project_metadata_updated]
+
+permissions:
+  contents: write
+
+jobs:
+  update-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout portfolio repo
+        uses: actions/checkout@v4
+
+      - name: Save incoming project JSON
+        env:
+          PROJECT_PAYLOAD: ${{ toJson(github.event.client_payload.project) }}
+        run: |
+          mkdir -p data/projects
+          slug=$(echo "$PROJECT_PAYLOAD" | jq -r '.slug')
+          echo "$PROJECT_PAYLOAD" | jq '.' > "data/projects/${slug}.json"
+
+      - name: Generate project.ts
+        run: node scripts/generate-projects-ts.mjs
+
+      - name: Validate metadata
+        run: node scripts/validate-project.mjs data/projects/${slug}.json
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/projects src/data/project.ts
+          git diff --cached --quiet && exit 0
+          git commit -m "sync project metadata from ${{ github.event.client_payload.source_repo }}"
+          git push
