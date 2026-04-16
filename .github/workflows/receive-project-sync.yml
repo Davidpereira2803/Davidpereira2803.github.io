@@ -50,11 +50,11 @@ jobs:
           ')
           echo "$normalized_payload" | jq '.' > "data/projects/${slug}.json"
 
-      - name: Generate project.ts
-        run: node scripts/generate-projects-ts.mjs
-
       - name: Validate metadata
         run: node scripts/validate-project.mjs data/projects/${PROJECT_SLUG}.json
+
+      - name: Upsert project in projects.ts
+        run: node scripts/upsert-project-in-ts.mjs data/projects/${PROJECT_SLUG}.json
 
       - name: Commit changes
         run: |
