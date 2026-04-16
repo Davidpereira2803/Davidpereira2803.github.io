@@ -26,7 +26,18 @@ jobs:
             exit 1
           fi
           echo "PROJECT_SLUG=$slug" >> "$GITHUB_ENV"
-          echo "$PROJECT_PAYLOAD" | jq '.' > "data/projects/${slug}.json"
+          normalized_payload=$(echo "$PROJECT_PAYLOAD" | jq '
+            .image = (
+              if (.image | type == "string") and (.image | length > 0) then
+                .image
+              elif (.images | type == "array") and ((.images | length) > 0) and (.images[0] | type == "string") and (.images[0] | length > 0) then
+                .images[0]
+              else
+                ""
+              end
+            )
+          ')
+          echo "$normalized_payload" | jq '.' > "data/projects/${slug}.json"
 
       - name: Generate project.ts
         run: node scripts/generate-projects-ts.mjs

@@ -11,7 +11,16 @@ const files = fs.existsSync(dataDir)
 const projects = files
   .map((file) => {
     const fullPath = path.join(dataDir, file);
-    return JSON.parse(fs.readFileSync(fullPath, "utf8"));
+    const project = JSON.parse(fs.readFileSync(fullPath, "utf8"));
+    const fallbackImage = Array.isArray(project.images)
+      ? project.images.find((img) => typeof img === "string" && !!img.trim())
+      : undefined;
+
+    if ((!project.image || !String(project.image).trim()) && fallbackImage) {
+      project.image = fallbackImage;
+    }
+
+    return project;
   })
   .sort((a, b) => {
     if (!!b.featured !== !!a.featured) return Number(b.featured) - Number(a.featured);
