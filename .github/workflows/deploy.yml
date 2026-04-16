@@ -3,6 +3,13 @@ name: Build and Deploy to GitHub Pages
 on:
   push:
     branches: [ main]
+    paths-ignore:
+      - data/projects/**
+      - src/data/projects.ts
+  workflow_run:
+    workflows: ["Receive project metadata sync"]
+    types:
+      - completed
 
 permissions:
   contents: read
@@ -11,6 +18,9 @@ permissions:
 
 jobs:
   build:
+    if: >-
+      github.event_name == 'push' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

@@ -190,7 +190,7 @@ export const PROJECTS: Project[] = [
     "featured": false,
     "image": "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/icon.png",
     "link": "https://github.com/Davidpereira2803/imposter-hunt",
-    "longDescription": "Imposter Hunt is a fast-pa:contentReference[oaicite:0]{index=0}er on a single shared device. Players receive a secret word except the Imposter, who must blend in and guess the word after surviving the voting rounds. The project features an AI-backed generation API that lets users create custom word lists from their own input.",
+    "longDescription": "Imposter Hunt is a fast-paced social deduction game on a single shared device. Players receive a secret word except the Imposter, who must blend in and guess the word after surviving the voting rounds. The project features an AI-backed generation API that lets users create custom word lists from their own input.",
     "productPage": "https://pearlabs.dev/imposter-hunt",
     "repo": "https://github.com/Davidpereira2803/imposter-hunt",
     "slug": "imposter-hunt",
@@ -202,6 +202,16 @@ export const PROJECTS: Project[] = [
       "AI API"
     ],
     "title": "Imposter Hunt",
-    "images": null
+    "images": [
+      "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/icon.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice1.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice2.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice3.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice4.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice5.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice6.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice7.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice8.png"
+    ]
   }
 ];
