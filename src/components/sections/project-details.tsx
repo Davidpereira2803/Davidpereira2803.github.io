@@ -1,22 +1,25 @@
 "use client";
 
 import { Project } from "@/data/projects";
+import { ClientProject } from "@/data/clients";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
-import { ExternalLink, ArrowLeft, Globe } from "lucide-react";
+import { ExternalLink, ArrowLeft, Globe, Quote } from "lucide-react";
 import { Github } from "@/components/icons/brands";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
-export function ProjectDetails({ project }: { project: Project }) {
+export function ProjectDetails({ project }: { project: Project | ClientProject }) {
+  const isClientProject = 'clientName' in project;
+
   return (
     <div className="container mx-auto py-24 px-4 md:px-6">
       <Link
-        href="/#projects"
+        href={isClientProject ? "/#client-work" : "/#projects"}
         className={buttonVariants({ variant: "ghost", className: "mb-8 gap-2" })}
       >
-        <ArrowLeft size={16} /> Back to Projects
+        <ArrowLeft size={16} /> Back to {isClientProject ? "Client Work" : "Projects"}
       </Link>
 
       <div className="grid gap-12 lg:grid-cols-2">
@@ -55,7 +58,7 @@ export function ProjectDetails({ project }: { project: Project }) {
           </a>
 
           <div className="mt-8 grid grid-cols-2 gap-4">
-            {project.images?.map((img, i) => {
+            {'images' in project && project.images?.map((img, i) => {
               if (img === project.image) return null;
               
               const isVideo = img.endsWith('.mp4');
@@ -100,10 +103,22 @@ export function ProjectDetails({ project }: { project: Project }) {
           className="flex flex-col gap-6"
         >
           <div>
-            <Badge variant="outline" className="mb-4">{project.category}</Badge>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <Badge variant="outline">{project.category}</Badge>
+              {isClientProject && (
+                <Badge className="bg-primary/20 text-primary border-primary/20">
+                  Client: {(project as ClientProject).clientName}
+                </Badge>
+              )}
+            </div>
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white">
               {project.title}
             </h1>
+            {isClientProject && (
+              <p className="mt-2 text-primary/80 font-medium">
+                {(project as ClientProject).serviceType}
+              </p>
+            )}
           </div>
 
           <div className="flex flex-wrap gap-2">
@@ -123,8 +138,21 @@ export function ProjectDetails({ project }: { project: Project }) {
             )}
           </div>
 
+          {isClientProject && (project as ClientProject).testimonial && (
+            <div className="relative mt-8 p-6 rounded-2xl bg-zinc-900 border border-zinc-800 shadow-xl">
+              <Quote size={32} className="absolute -top-4 -left-4 text-primary opacity-20" />
+              <p className="italic text-lg text-muted-foreground mb-4">
+                "{(project as ClientProject).testimonial?.quote}"
+              </p>
+              <div>
+                <p className="font-bold text-white">{(project as ClientProject).testimonial?.author}</p>
+                <p className="text-sm text-muted-foreground">{(project as ClientProject).testimonial?.role}</p>
+              </div>
+            </div>
+          )}
+
           <div className="flex flex-wrap gap-4 mt-8">
-            {project.repo && project.repo !== "#" && project.repo !== "" && (
+            {'repo' in project && project.repo && project.repo !== "#" && project.repo !== "" && (
               <a
                 href={project.repo}
                 target="_blank"
@@ -134,7 +162,7 @@ export function ProjectDetails({ project }: { project: Project }) {
                 <Github size={20} /> View Source Code
               </a>
             )}
-            {project.productPage && project.productPage !== "" && (
+            {'productPage' in project && project.productPage && project.productPage !== "" && (
               <a
                 href={project.productPage}
                 target="_blank"

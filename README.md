@@ -1,3 +1,23 @@
+<p align="center">
+  <b>David Pereira — Portfolio</b>
+</p>
+
+<p align="center">
+  A modern, high-performance portfolio website to showcase my projects, experience, and skills
+</p>
+
+<p align="center">
+  <a href="https://github.com/Davidpereira2803/Davidpereira2803.github.io/stargazers">
+    <img alt="Stars" src="https://img.shields.io/github/stars/Davidpereira2803/Davidpereira2803.github.io?style=flat" />
+  </a>
+  <a href="https://github.com/Davidpereira2803/Davidpereira2803.github.io/issues">
+    <img alt="Issues" src="https://img.shields.io/github/issues/Davidpereira2803/Davidpereira2803.github.io" />
+  </a>
+  <a href="https://davidpereira2803.github.io/">
+    <img alt="Live" src="https://img.shields.io/badge/live-demo-0057D9" />
+  </a>
+</p>
+
 # Personal Portfolio v2.0
 
 A high-performance, visually striking portfolio website built for computer science students and software engineers. Designed to be professional, innovative, and memorable.

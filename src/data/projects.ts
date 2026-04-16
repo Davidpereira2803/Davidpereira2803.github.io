@@ -29,10 +29,10 @@ export const PROJECTS: Project[] = [
     ],
     "link": "https://github.com/Davidpereira2803/tello_ros_driver_TEMO",
     "repo": "https://github.com/Davidpereira2803/tello_ros_driver_TEMO",
-    "image": "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/TemoEmotionBased/tello.jpg",
+    "image": "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/TemoEmotionBased/tello.jpg",
     "images": [
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/TemoEmotionBased/tello.jpg",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/TemoEmotionBased/temo-table.png"
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/TemoEmotionBased/tello.jpg",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/TemoEmotionBased/temo-table.png"
     ],
     "category": "Robotics",
     "featured": true,
@@ -53,14 +53,14 @@ export const PROJECTS: Project[] = [
     ],
     "link": "https://github.com/Davidpereira2803/tello_mixed_reality_handcontrol",
     "repo": "https://github.com/Davidpereira2803/tello_mixed_reality_handcontrol",
-    "image": "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/TemoMixedReality/tello.jpg",
+    "image": "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/TemoMixedReality/tello.jpg",
     "images": [
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/TemoMixedReality/tello.jpg",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/TemoMixedReality/temo-table.png",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/TemoMixedReality/circuit.png",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/TemoMixedReality/build.png",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/TemoMixedReality/Gauntlet.png",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/TemoMixedReality/HandMovements.png"
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/TemoMixedReality/tello.jpg",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/TemoMixedReality/temo-table.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/TemoMixedReality/circuit.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/TemoMixedReality/build.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/TemoMixedReality/Gauntlet.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/TemoMixedReality/HandMovements.png"
     ],
     "category": "Robotics",
     "featured": true,
@@ -82,12 +82,12 @@ export const PROJECTS: Project[] = [
     "repo": "https://github.com/Davidpereira2803/RPI2-FreeRTOS-CAN-BUS",
     "image": "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/RPI2FreeRTOS/canbus.jpg",
     "images": [
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/RPI2FreeRTOS/10led.png",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/RPI2FreeRTOS/3RPI.png",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/RPI2FreeRTOS/canbus.jpg",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/RPI2FreeRTOS/modelwithcola.jpg",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/RPI2FreeRTOS/modulecut.jpg",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/RPI2FreeRTOS/terminalmcp.png"
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/RPI2FreeRTOS/10led.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/RPI2FreeRTOS/3RPI.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/RPI2FreeRTOS/canbus.jpg",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/RPI2FreeRTOS/modelwithcola.jpg",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/RPI2FreeRTOS/modulecut.jpg",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/RPI2FreeRTOS/terminalmcp.png"
     ],
     "category": "Embedded",
     "featured": true,
@@ -108,9 +108,9 @@ export const PROJECTS: Project[] = [
     "repo": "https://github.com/Davidpereira2803/alma-da-beira-alta",
     "image": "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/AlmaDaBeiraAlta/welcome.png",
     "images": [
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/AlmaDaBeiraAlta/welcome.png",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/AlmaDaBeiraAlta/services.png",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/AlmaDaBeiraAlta/joincommunity.png"
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/AlmaDaBeiraAlta/welcome.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/AlmaDaBeiraAlta/services.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/AlmaDaBeiraAlta/joincommunity.png"
     ],
     "category": "Web",
     "status": "in production"
@@ -149,12 +149,12 @@ export const PROJECTS: Project[] = [
     "repo": "https://github.com/Davidpereira2803/letzgrade-mobile",
     "image": "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/LetzGradeMobile/letzgrade-app1.jpg",
     "images": [
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/LetzGradeMobile/letzgrade-app1.jpg",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/LetzGradeMobile/letzgrade-app2.jpg",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/LetzGradeMobile/letzgrade-app3.jpg",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/LetzGradeMobile/letzgrade-app4.jpg",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/LetzGradeMobile/letzgrade-app5.jpg",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/LetzGradeMobile/letzgrade-app6.jpg"
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/LetzGradeMobile/letzgrade-app1.jpg",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/LetzGradeMobile/letzgrade-app2.jpg",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/LetzGradeMobile/letzgrade-app3.jpg",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/LetzGradeMobile/letzgrade-app4.jpg",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/LetzGradeMobile/letzgrade-app5.jpg",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/LetzGradeMobile/letzgrade-app6.jpg"
     ],
     "category": "Mobile",
     "status": "prototype"
@@ -175,11 +175,11 @@ export const PROJECTS: Project[] = [
     "repo": "#",
     "image": "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/HomeLab/customserverrender.mp4",
     "images": [
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/HomeLab/customserverrender.mp4",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/HomeLab/homelab1.jpg",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/HomeLab/customserverrender.png",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/HomeLab/diagram.png",
-      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/assets/images/HomeLab/homelab2.jpg"
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/HomeLab/customserverrender.mp4",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/HomeLab/homelab1.jpg",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/HomeLab/customserverrender.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/HomeLab/diagram.png",
+      "https://raw.githubusercontent.com/Davidpereira2803/Davidpereira2803.github.io/main/images/HomeLab/homelab2.jpg"
     ],
     "category": "Infrastructure",
     "status": "in-progress"
