@@ -11,6 +11,14 @@ const allowedCategories = new Set([
 ]);
 
 const file = process.argv[2];
+if (!file) {
+  throw new Error("Usage: node scripts/validate-project.mjs <path-to-project-json>");
+}
+
+if (!fs.existsSync(file)) {
+  throw new Error(`Project metadata file not found: ${file}`);
+}
+
 const data = JSON.parse(fs.readFileSync(file, "utf8"));
 
 const requiredStrings = ["slug", "title", "description", "link", "repo", "image", "category"];

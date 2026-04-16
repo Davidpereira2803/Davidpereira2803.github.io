@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const dataDir = path.resolve("data/projects");
-const outputFile = path.resolve("src/data/project.ts");
+const outputFile = path.resolve("src/data/projects.ts");
 
 const files = fs.existsSync(dataDir)
   ? fs.readdirSync(dataDir).filter((f) => f.endsWith(".json"))

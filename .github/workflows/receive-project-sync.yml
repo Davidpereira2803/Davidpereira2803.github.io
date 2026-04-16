@@ -21,19 +21,24 @@ jobs:
         run: |
           mkdir -p data/projects
           slug=$(echo "$PROJECT_PAYLOAD" | jq -r '.slug')
+          if [ -z "$slug" ] || [ "$slug" = "null" ]; then
+            echo "Missing or invalid project.slug in repository_dispatch payload"
+            exit 1
+          fi
+          echo "PROJECT_SLUG=$slug" >> "$GITHUB_ENV"
           echo "$PROJECT_PAYLOAD" | jq '.' > "data/projects/${slug}.json"
 
       - name: Generate project.ts
         run: node scripts/generate-projects-ts.mjs
 
       - name: Validate metadata
-        run: node scripts/validate-project.mjs data/projects/${slug}.json
+        run: node scripts/validate-project.mjs data/projects/${PROJECT_SLUG}.json
 
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/projects src/data/project.ts
+          git add data/projects src/data/projects.ts
           git diff --cached --quiet && exit 0
           git commit -m "sync project metadata from ${{ github.event.client_payload.source_repo }}"
           git push
