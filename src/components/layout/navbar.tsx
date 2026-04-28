@@ -6,17 +6,23 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
+import { CLIENT_PROJECTS } from "@/data/clients";
 
-const NAV_ITEMS = [
+const BASE_NAV_ITEMS = [
   { name: "About", href: "/#about" },
   { name: "Projects", href: "/#projects" },
-  { name: "Experience", href: "/#experience" },
-  { name: "Contact", href: "/#contact" },
 ];
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navItems = [
+    ...BASE_NAV_ITEMS,
+    ...(CLIENT_PROJECTS.length > 0 ? [{ name: "Client", href: "/#client-work" }] : []),
+    { name: "Experience", href: "/#experience" },
+    { name: "Contact", href: "/#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -47,7 +53,7 @@ export function Navbar() {
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center gap-8">
-          {NAV_ITEMS.map((item) => (
+          {navItems.map((item) => (
             <li key={item.name}>
               <Link
                 href={item.href}
@@ -86,7 +92,7 @@ export function Navbar() {
             className="absolute top-20 left-4 right-4 p-4 bg-zinc-900/90 backdrop-blur-xl border border-white/10 rounded-2xl md:hidden"
           >
             <ul className="flex flex-col gap-4">
-              {NAV_ITEMS.map((item) => (
+              {navItems.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}

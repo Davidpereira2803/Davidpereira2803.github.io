@@ -1,0 +1,67 @@
+name: Receive project metadata sync
+
+on:
+  repository_dispatch:
+    types: [project_metadata_updated]
+
+permissions:
+  contents: write
+
+jobs:
+  update-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout portfolio repo
+        uses: actions/checkout@v4
+
+      - name: Save incoming project JSON
+        env:
+          PROJECT_PAYLOAD: ${{ toJson(github.event.client_payload.project) }}
+        run: |
+          mkdir -p data/projects
+          slug=$(echo "$PROJECT_PAYLOAD" | jq -r '.slug')
+          if [ -z "$slug" ] || [ "$slug" = "null" ]; then
+            echo "Missing or invalid project.slug in repository_dispatch payload"
+            exit 1
+          fi
+          echo "PROJECT_SLUG=$slug" >> "$GITHUB_ENV"
+          normalized_payload=$(echo "$PROJECT_PAYLOAD" | jq '
+            . as $original
+            | .image = (
+                if ($original.image | type == "string") and ($original.image | length > 0) then
+                  $original.image
+                elif ($original.image | type == "array") and (($original.image | length) > 0) and ($original.image[0] | type == "string") and ($original.image[0] | length > 0) then
+                  $original.image[0]
+                elif ($original.images | type == "array") and (($original.images | length) > 0) and ($original.images[0] | type == "string") and ($original.images[0] | length > 0) then
+                  $original.images[0]
+                else
+                  ""
+                end
+              )
+            | .images = (
+                if ($original.image | type == "array") then
+                  $original.image
+                elif ($original.images | type == "array") then
+                  $original.images
+                else
+                  .images
+                end
+              )
+          ')
+          echo "$normalized_payload" | jq '.' > "data/projects/${slug}.json"
+
+      - name: Validate metadata
+        run: node scripts/validate-project.mjs data/projects/${PROJECT_SLUG}.json
+
+      - name: Upsert project in projects.ts
+        run: node scripts/upsert-project-in-ts.mjs data/projects/${PROJECT_SLUG}.json
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/projects src/data/projects.ts
+          git diff --cached --quiet && exit 0
+          git commit -m "sync project metadata from ${{ github.event.client_payload.source_repo }}"
+          git push

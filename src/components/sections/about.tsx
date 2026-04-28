@@ -3,7 +3,9 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { Bot, Cpu, Globe, Code2 } from "lucide-react";
+import { Bot, Cpu, Globe, Code2, Download, FileText } from "lucide-react";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 const SKILLS = [
   "Python",
@@ -102,26 +104,76 @@ export function About() {
         ))}
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        viewport={{ once: true }}
-        className="mt-16 flex flex-col items-center gap-6"
-      >
-        <h3 className="text-2xl font-bold">Tech Stack</h3>
-        <div className="flex flex-wrap justify-center gap-2 max-w-3xl">
-          {SKILLS.map((skill) => (
-            <Badge
-              key={skill}
-              variant="secondary"
-              className="px-4 py-2 text-sm bg-zinc-800 hover:bg-zinc-700"
-            >
-              {skill}
-            </Badge>
-          ))}
-        </div>
-      </motion.div>
+      <div className="mt-20 grid gap-12 lg:grid-cols-2">
+        {/* Tech Stack Column */}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="flex flex-col gap-6"
+        >
+          <div className="flex items-center gap-2">
+            <div className="h-8 w-1 bg-primary rounded-full" />
+            <h3 className="text-2xl font-bold">Tech Stack</h3>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {SKILLS.map((skill) => (
+              <Badge
+                key={skill}
+                variant="secondary"
+                className="px-4 py-2 text-sm bg-zinc-900 border-zinc-800 hover:border-zinc-700 hover:text-primary transition-colors"
+              >
+                {skill}
+              </Badge>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* CV Download Column */}
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="flex flex-col gap-6"
+        >
+          <div className="flex items-center gap-2">
+            <div className="h-8 w-1 bg-primary rounded-full" />
+            <h3 className="text-2xl font-bold">Curriculum Vitae</h3>
+          </div>
+          <Card className="bg-zinc-900/30 border-zinc-800 backdrop-blur-sm relative overflow-hidden group">
+            {/* Background Decorative Icon - Moved and rotated to avoid overlap */}
+            <div className="absolute -bottom-6 -right-6 p-4 opacity-5 group-hover:opacity-10 transition-all duration-500 rotate-12 group-hover:rotate-0 pointer-events-none">
+              <FileText size={120} />
+            </div>
+            
+            <CardContent className="p-6 flex flex-col gap-6 relative z-10">
+              <p className="text-muted-foreground max-w-[85%]">
+                View my full professional background, academic achievements, and certifications.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a 
+                  href="/cv/cv-en.pdf" 
+                  download="David_Pereira_CV_EN.pdf"
+                  className={cn(buttonVariants({ variant: "glow", size: "lg" }), "gap-2 flex-1 sm:flex-none relative overflow-hidden")}
+                >
+                  <Download className="h-4 w-4" /> 
+                  <span>English</span>
+                </a>
+                <a 
+                  href="/cv/cv-fr.pdf" 
+                  download="David_Pereira_CV_FR.pdf"
+                  className={cn(buttonVariants({ variant: "outline", size: "lg" }), "gap-2 border-zinc-700 hover:border-primary/50 transition-all duration-300 flex-1 sm:flex-none")}
+                >
+                  <Download className="h-4 w-4" /> 
+                  <span>French</span>
+                </a>
+              </div>
+            </CardContent>
+          </Card>
+        </motion.div>
+      </div>
     </section>
   );
 }

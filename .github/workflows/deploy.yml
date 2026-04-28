@@ -1,9 +1,15 @@
-name: Deploy to GitHub Pages
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - dev
+    branches: [ main]
+    paths-ignore:
+      - data/projects/**
+      - src/data/projects.ts
+  workflow_run:
+    workflows: ["Receive project metadata sync"]
+    types:
+      - completed
 
 permissions:
   contents: read
@@ -12,6 +18,9 @@ permissions:
 
 jobs:
   build:
+    if: >-
+      github.event_name == 'push' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,6 +31,11 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: npm ci
+      - name: Copy CVs to public
+        run: |
+          mkdir -p public/cv
+          cp assets/cv/cv-latest.pdf public/cv/cv-en.pdf
+          cp assets/cv/cv-latest-fr.pdf public/cv/cv-fr.pdf
       - name: Build with Next.js
         run: npm run build
       - name: Upload artifact
