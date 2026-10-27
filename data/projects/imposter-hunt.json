@@ -16,5 +16,15 @@
     "AI API"
   ],
   "title": "Imposter Hunt",
-  "images": null
+  "images": [
+    "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/icon.png",
+    "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice1.png",
+    "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice2.png",
+    "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice3.png",
+    "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice4.png",
+    "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice5.png",
+    "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice6.png",
+    "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice7.png",
+    "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice8.png"
+  ]
 }
