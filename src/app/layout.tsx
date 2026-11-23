@@ -20,6 +20,7 @@ const jetbrainsMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+  icons: { icon: "/icon.png", apple: "/icon.png" },
   metadataBase: new URL("https://pearlabs.dev"),
   title: { default: "David Pereira | AI, Robotics & Software Development", template: "%s | David Pereira" },
   description: "David Pereira de Magalhães, Computer Science master\'s student in Luxembourg. Projects in AI, robotics, embedded systems, and web and mobile development.",
