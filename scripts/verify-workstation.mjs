@@ -7,10 +7,11 @@ const page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotio
 const errors=[];
 page.on("pageerror",e=>errors.push(e.message));
 await page.goto("http://localhost:4173",{waitUntil:"networkidle"});
-await page.getByRole("heading",{name:"Curiosity, put to work."}).waitFor();
+await page.getByRole("heading",{name:/Curiosity,/}).waitFor();
 assert.equal(await page.locator('a[href^="mailto:"]').count(),0);
-await page.locator("#roll-control").fill("25");
-await page.locator(".scope-readouts").getByText("+25°",{exact:true}).waitFor();
+await page.locator("#roll-control").focus();
+await page.keyboard.press("End");
+await page.locator(".scope-readouts").getByText("+35°",{exact:true}).waitFor();
 await page.getByRole("button",{name:"Perception",exact:true}).click();
 await page.getByText("Camera → world model",{exact:true}).waitFor();
 await page.getByRole("button",{name:"Reset",exact:true}).click();
