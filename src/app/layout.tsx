@@ -18,8 +18,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dev Portfolio | Creative Technologist",
-  description: "Portfolio of a Computer Science Student & Full Stack Developer",
+  metadataBase: new URL("https://pearlabs.dev"),
+  title: { default: "David Pereira | AI, Robotics & Software Development", template: "%s | David Pereira" },
+  description: "David Pereira de Magalhães, Computer Science master\'s student in Luxembourg. Projects in AI, robotics, embedded systems, and web and mobile development.",
+  openGraph: { title: "David Pereira | AI, Robotics & Software Development", description: "Explore my projects in AI, robotics, embedded systems, and web and mobile development.", url: "https://pearlabs.dev", siteName: "David Pereira", type: "website" },
   keywords: ["Next.js", "React", "Portfolio", "Computer Science", "Developer"],
 };
 

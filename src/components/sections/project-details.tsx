@@ -49,7 +49,7 @@ export function ProjectDetails({ project }: { project: Project | ClientProject }
                 alt={project.title}
                 fill
                 priority
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-contain bg-zinc-950 transition-transform duration-500 group-hover:scale-105"
               />
             )}
             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
@@ -138,6 +138,22 @@ export function ProjectDetails({ project }: { project: Project | ClientProject }
             )}
           </div>
 
+          {"caseStudy" in project && project.caseStudy && (
+            <div className="grid gap-6 border-t border-white/10 pt-6">
+              {([
+                ["The problem", project.caseStudy.problem],
+                ["My contribution", project.caseStudy.contribution],
+                ["Technical approach", project.caseStudy.approach],
+                ["Outcome and next steps", project.caseStudy.outcome],
+              ] as const).map(([heading, description]) => (
+                <section key={heading}>
+                  <h2 className="text-xl font-semibold mb-2">{heading}</h2>
+                  <p className="text-muted-foreground leading-relaxed">{description}</p>
+                </section>
+              ))}
+            </div>
+          )}
+
           {isClientProject && (project as ClientProject).testimonial && (
             <div className="relative mt-8 p-6 rounded-2xl bg-zinc-900 border border-zinc-800 shadow-xl">
               <Quote size={32} className="absolute -top-4 -left-4 text-primary opacity-20" />
@@ -172,7 +188,7 @@ export function ProjectDetails({ project }: { project: Project | ClientProject }
                 <Globe size={20} /> Visit Product Page
               </a>
             )}
-            {project.link && project.link !== "#" && project.link !== "" && (
+            {project.link && project.link !== "#" && project.link !== "" && project.link !== project.repo && (
               <a
                 href={project.link}
                 target="_blank"

@@ -20,7 +20,7 @@ export function Navbar() {
   const navItems = [
     ...BASE_NAV_ITEMS,
     ...(CLIENT_PROJECTS.length > 0 ? [{ name: "Client", href: "/#client-work" }] : []),
-    { name: "Experience", href: "/#experience" },
+    { name: "Education", href: "/#experience" },
     { name: "Contact", href: "/#contact" },
   ];
 
@@ -65,7 +65,7 @@ export function Navbar() {
           ))}
           <li>
             <Link
-              href="#contact"
+              href="/#contact"
               className={cn(buttonVariants({ size: "sm" }), "rounded-full bg-white text-black hover:bg-white/90")}
             >
               Let's Talk
@@ -75,6 +75,10 @@ export function Navbar() {
 
         {/* Mobile Toggle */}
         <button
+          type="button"
+          aria-label={mobileMenuOpen ? "Close navigation" : "Open navigation"}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-navigation"
           className="md:hidden text-white"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
@@ -89,6 +93,7 @@ export function Navbar() {
             initial={{ opacity: 0, scale: 0.95, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: -20 }}
+            id="mobile-navigation"
             className="absolute top-20 left-4 right-4 p-4 bg-zinc-900/90 backdrop-blur-xl border border-white/10 rounded-2xl md:hidden"
           >
             <ul className="flex flex-col gap-4">

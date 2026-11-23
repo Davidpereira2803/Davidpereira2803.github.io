@@ -9,9 +9,14 @@ import { cn } from "@/lib/utils";
 
 const SKILLS = [
   "Python",
+  "TypeScript",
+  "PyTorch",
+  "Ollama",
   "ROS2",
   "JavaScript",
   "React",
+  "React Native",
+  "Next.js",
   "Java",
   "C",
   "Embedded Systems",
@@ -68,7 +73,7 @@ export function About() {
         <div className="max-w-[800px] text-muted-foreground md:text-lg flex flex-col gap-4">
           <p>
             I hold a Bachelor's degree in Computer Science from the University of Luxembourg and am currently 
-            a first-year student in the Master in Information and Computer Science at the same university. 
+            a student in the Master in Information and Computer Science at the same university. 
             I am passionate about software development and technology, and I enjoy working on projects that 
             connect theory with practical applications.
           </p>

@@ -15,7 +15,7 @@ export function Footer() {
         </div>
 
         <div className="flex gap-6">
-          {SOCIALS.map((social) => (
+          {SOCIALS.filter((social) => !social.href.startsWith("mailto:")).map((social) => (
             <a
               key={social.name}
               href={social.href}

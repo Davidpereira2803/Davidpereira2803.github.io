@@ -1,10 +1,10 @@
 {
   "category": "Mobile",
-  "description": "Fast-paced social deduction game with AI-backed generation API for custom word lists, on a single shared device.",
-  "featured": false,
-  "image": "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/icon.png",
-  "link": "https://github.com/Davidpereira2803/imposter-hunt",
-  "longDescription": "Imposter Hunt is a fast-pa:contentReference[oaicite:0]{index=0}er on a single shared device. Players receive a secret word except the Imposter, who must blend in and guess the word after surviving the voting rounds. The project features an AI-backed generation API that lets users create custom word lists from their own input.",
+  "description": "A pass-and-play social deduction game with special roles, multilingual support, and AI-generated custom topics.",
+  "featured": true,
+  "image": "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice1.png",
+  "link": "#",
+  "longDescription": "Previously called Imposter Hunt, The Munkeler is a social deduction game played on one shared phone. Players exchange clues and vote to identify the player without the secret word. Special roles and AI-generated custom topics add variety, while persistent local state keeps setup and gameplay on the device.",
   "productPage": "https://pearlabs.dev/imposter-hunt",
   "repo": "https://github.com/Davidpereira2803/imposter-hunt",
   "slug": "imposter-hunt",
@@ -15,7 +15,7 @@
     "Zustand",
     "AI API"
   ],
-  "title": "Imposter Hunt",
+  "title": "The Munkeler",
   "images": [
     "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/icon.png",
     "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice1.png",
@@ -26,5 +26,11 @@
     "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice6.png",
     "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice7.png",
     "https://raw.githubusercontent.com/Davidpereira2803/imposter-hunt/master/assets/screenshots/Slice8.png"
-  ]
+  ],
+  "caseStudy": {
+    "problem": "Make social deduction easy to play with a group and a single phone.",
+    "contribution": "Built the mobile game flow, role assignment, voting mechanics, local persistence, and integration with an AI topic-generation API.",
+    "approach": "React Native and Expo support the mobile interface; Zustand manages persistent game state. AI-generated topics extend the built-in content without changing the core offline game.",
+    "outcome": "The project evolved into The Munkeler, with special roles, multiple languages, and a release history documenting gameplay and usability improvements."
+  }
 }

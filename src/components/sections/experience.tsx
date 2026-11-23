@@ -15,12 +15,12 @@ export function Experience() {
         viewport={{ once: true }}
         className="flex flex-col items-center gap-4 text-center mb-16"
       >
-        <Badge variant="outline">Career</Badge>
+        <Badge variant="outline">Academic Background</Badge>
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-          Experience
+          Education
         </h2>
         <p className="max-w-[700px] text-muted-foreground md:text-xl">
-          My professional journey and industry experience.
+          My academic background at the University of Luxembourg.
         </p>
       </motion.div>
 
