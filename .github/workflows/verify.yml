@@ -2,6 +2,7 @@ name: Verify portfolio
 on:
   push:
     branches-ignore: [main]
+    paths-ignore: ['.review/**']
   pull_request:
 permissions:
   contents: read
@@ -17,3 +18,19 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: node scripts/validate-project.mjs data/projects/imposter-hunt.json
+      - name: Install browser checks
+        run: |
+          npm install --no-save --package-lock=false playwright
+          npx playwright install --with-deps chromium
+      - name: Check workstation interactions
+        run: |
+          python3 -m http.server 4173 --directory out > /tmp/portfolio-http.log 2>&1 &
+          node scripts/verify-workstation.mjs
+      - name: Upload preview and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: retro-workstation-preview
+          path: |
+            out
+            .review
